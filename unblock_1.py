@@ -261,7 +261,7 @@ def parse_layout(str_data):
             # \d+   : Match seat index/coordinate
             # \+    : Match literal '+' delimiter
             # (\d+) : Capture the physical seat number
-            match = re.search(r"[A-Z][24]\d+\+(\d+)", seat)
+            match = re.search(r"[A-Z][14]\d+\+(\d+)", seat)
             
             if match:
                 available_in_row.append(match.group(1))
