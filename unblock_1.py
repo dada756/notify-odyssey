@@ -12,7 +12,7 @@ from datetime import datetime
 DATES = ["20260717", "20260718", "20260719"]
 VENUE_CODE = "ALUC"
 EVENT_CODE = "ET00504055"
-STATE_FILE = "first_3_days_state.json"
+STATE_FILE = "first_day_state.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
 
 # Track WARP State natively
