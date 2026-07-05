@@ -250,12 +250,19 @@ def parse_layout(str_data):
     for row in rows:
         if not row or ":" not in row: continue
         elements = row.split(":")
-        row_letter = elements[1]
-        seats = elements[2:]
+        row_letter = elements[1]  # Extracts row letter (e.g., 'A', 'B')
+        seats = elements[2:]      # Extracts the seat strings
         
         available_in_row = []
         for seat in seats:
-            match = re.search(r"A[^2]\d{2}(\d+)\+", seat)
+            # --- THE ONLY CHANGED LINE ---
+            # [A-Z] : Match Category (A, B, C, D)
+            # [24]  : Match Status (2 = Available, 4 = Best Available)
+            # \d+   : Match seat index/coordinate
+            # \+    : Match literal '+' delimiter
+            # (\d+) : Capture the physical seat number
+            match = re.search(r"[A-Z][24]\d+\+(\d+)", seat)
+            
             if match:
                 available_in_row.append(match.group(1))
                 
