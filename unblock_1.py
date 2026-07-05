@@ -133,7 +133,7 @@ def trigger_ntfy(message):
     for i in range(1):
         try:
             resp = requests.post(
-                "https://ntfy.sh/odssy_stlyt",
+                "https://ntfy.sh/dolby_unblock",
                 data=message.encode('utf-8'),
                 headers={"Priority": "urgent"},
                 timeout=10
