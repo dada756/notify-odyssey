@@ -352,7 +352,7 @@ def main():
                         human_date = humanize_date(s_date)
                         
                         msg = (
-                            f"ODSY unblock at {rows_str} row. Date: {s_date}. Time: {s_time}. {newly_unblocked_count} seats unblocked."
+                            f"[{newly_unblocked_count}] ODSY DOLBY."
                             f"{rows_str} rows unblocked for #TheOdyssey at ALLU DOLBY CINEMA.\n\n"
                             f"{human_date}, {s_time}"
                         )
