@@ -133,7 +133,7 @@ def trigger_ntfy(message):
     for i in range(1):
         try:
             resp = requests.post(
-                "https://ntfy.sh/dolby_unblock",
+                "https://ntfy.sh/odssy_stlyt",
                 data=message.encode('utf-8'),
                 headers={"Priority": "urgent"},
                 timeout=10
@@ -207,7 +207,7 @@ def fetch_sessions():
             
             pcx_count = 0
             for show in shows:
-                if show.get("attributes") == "DOLBY CINEMA":
+                if show.get("attributes") == "PCX HDR by BARCO":
                     sessions.append({
                         "sessionId": show["sessionId"],
                         "dateCode": show["showDateCode"],
@@ -352,8 +352,8 @@ def main():
                         human_date = humanize_date(s_date)
 
                         msg = (
-                            f"[{newly_unblocked_count}] ODSY DOLBY."
-                            f"{rows_str} rows unblocked for #TheOdyssey at ALLU DOLBY CINEMA.\n\n"
+                            f"[{newly_unblocked_count}] ODSY BARCO."
+                            f"{rows_str} rows unblocked for #TheOdyssey at PCX HDR by BARCO.\n\n"
                             f"{human_date}, {s_time}"
                         )
                         trigger_ntfy(msg)
