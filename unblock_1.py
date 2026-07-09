@@ -9,7 +9,7 @@ from datetime import datetime
 
 # --- CONFIGURATION ---
 #DATES = ["20260717", "20260718", "20260719"]
-DATES = ["20260717", "20260718", "20260719"]
+DATES = ["20260717"]
 VENUE_CODE = "ALUC"
 EVENT_CODE = "ET00504055"
 STATE_FILE = "first_day_state.json"
