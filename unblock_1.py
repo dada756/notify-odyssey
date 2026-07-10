@@ -347,7 +347,7 @@ def main():
                 
                 if not is_first_run:
                     # Check if the unblocked seats meet the minimum threshold of 6
-                    if newly_unblocked_count >= 9:
+                    if newly_unblocked_count >= 5:
                         rows_str = ", ".join(sorted(unblocked_rows_list))
                         human_date = humanize_date(s_date)
 
