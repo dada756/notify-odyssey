@@ -16,7 +16,7 @@ STATE_FILE = "odyssey_barco_state.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
 
 # Track WARP State natively
-USE_WARP = True
+USE_WARP = False
 
 # Cloudflare WARP local proxy
 PROXIES = {
