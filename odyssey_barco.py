@@ -192,7 +192,7 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
 def fetch_sessions():
     sessions = []
     for date_code in DATES:
-        time.sleep(10)
+        time.sleep(6)
         print(f"\n[NETWORK] Fetching sessions for Date: {date_code}...")
         url = f"https://in.bookmyshow.com/api/movies-data/seatlayout/v1/primary?eventCode={EVENT_CODE}&dateCode={date_code}&regionCode=HYD&venueCode={VENUE_CODE}"
         
