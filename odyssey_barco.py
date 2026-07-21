@@ -170,7 +170,7 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
             print(f"    -> Status: {resp.status_code} (Using WARP: {USE_WARP})")
             
             # Catch Rate Limits
-            if resp.status_code == 429:
+            if resp.status_code in [429,403]:
                 print(f"    -> ⚠️ Rate limited (429) on attempt {attempt}/{max_retries}.")
                 if attempt < max_retries:
                     toggle_warp()
