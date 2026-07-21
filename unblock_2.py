@@ -170,7 +170,7 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
             print(f"    -> Status: {resp.status_code} (Using WARP: {USE_WARP})")
             
             # Catch Rate Limits
-            if resp.status_code == 429:
+            if resp.status_code in [429,403]:
                 print(f"    -> ⚠️ Rate limited (429) on attempt {attempt}/{max_retries}.")
                 if attempt < max_retries:
                     toggle_warp()
@@ -192,6 +192,7 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
 def fetch_sessions():
     sessions = []
     for date_code in DATES:
+        time.sleep(6)
         print(f"\n[NETWORK] Fetching sessions for Date: {date_code}...")
         url = f"https://in.bookmyshow.com/api/movies-data/seatlayout/v1/primary?eventCode={EVENT_CODE}&dateCode={date_code}&regionCode=HYD&venueCode={VENUE_CODE}"
         
