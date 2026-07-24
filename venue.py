@@ -227,7 +227,7 @@ def main():
                 
                 # Format exactly as requested
                 human_date = humanize_date(s_date)
-                msg = f"New showtime added for #TheOdyssey at PCX HDR by BARCO.\n\n{human_date}, {s_time}"
+                msg = f"New showtime added for #SpiderManBrandNewDay at PCX HDR by BARCO.\n\n{human_date}, {s_time}"
                 
                 # Only alert if it's NOT the first initialization run 
                 # (to avoid getting spammed with existing shows when you first boot up)
