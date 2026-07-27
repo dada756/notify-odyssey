@@ -294,7 +294,6 @@ def main():
             for movie in new_movies_discovered:
                 log("ALERT", f"🟢 DETECTED NEW MOVIE: {movie}")
                 msg = f"New Movie Added at ALLU Cinemas!\n\n'{movie}' is now listed."
-                trigger_ntfy(msg)
                 
             if new_sessions_discovered:
                 sessions_by_movie = {}
