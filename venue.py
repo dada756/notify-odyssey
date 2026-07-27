@@ -178,7 +178,16 @@ def fetch_sessions():
                         "time": show["showTime"]
                     })
                     pcx_count += 1
-            print(f"    -> Filtered {pcx_count} matching sessions for {date_code}.")
+            print(f"    -> Filtered {pcx_count} barco matching sessions for {date_code}.")
+            for show in shows:
+                if show.get("attributes") == "PCX SCREEN":
+                    sessions.append({
+                        "sessionId": show["sessionId"],
+                        "dateCode": show["showDateCode"],
+                        "time": show["showTime"]
+                    })
+                    pcx_count += 1
+            print(f"    -> Filtered {pcx_count} pcx matching sessions for {date_code}.")
             
         except Exception as e:
             print(f"    -> JSON Parse error for {date_code}: {e}")
