@@ -293,8 +293,6 @@ def main():
         if not is_first_run:
             for movie in new_movies_discovered:
                 log("ALERT", f"🟢 DETECTED NEW MOVIE: {movie}")
-                msg = f"New Movie Added at ALLU Cinemas!\n\n'{movie}' is now listed."
-                trigger_ntfy(msg)
                 
             if new_sessions_discovered:
                 sessions_by_movie = {}
@@ -310,7 +308,7 @@ def main():
                     dates_str = ", ".join(dates)
                     
                     log("ALERT", f"🟢 DETECTED {count} NEW SHOWS FOR: {movie}")
-                    msg = f"{count} new showtime(s) added for '{movie}' at ALLU Cinemas!\n\nDates: {dates_str}"
+                    msg = f"{count} New showtimes added for '{movie}' at Prasads Cinemas!\n\nDates: {dates_str}"
                     trigger_ntfy(msg)
 
         # 4. Save to GitHub if state mutated
