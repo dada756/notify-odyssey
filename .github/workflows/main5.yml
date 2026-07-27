@@ -1,4 +1,4 @@
-name: odyssey barco
+name: allu showtimes
 
 on:
   workflow_dispatch:
