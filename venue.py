@@ -171,7 +171,7 @@ def fetch_sessions():
             
             pcx_count = 0
             for show in shows:
-                if show.get("attributes") in ["PCX HDR by BARCO", "PCX SCREEN"]:
+                if show.get("attributes") == "PCX HDR by BARCO" or show.get("attributes") == "PCX SCREEN":
                     sessions.append({
                         "sessionId": show["sessionId"],
                         "dateCode": show["showDateCode"],
