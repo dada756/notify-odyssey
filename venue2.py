@@ -40,7 +40,7 @@ def get_timestamp():
 
 def log(level, message):
     """Custom logger to prepend timestamp and log level."""
-    print(f"[{get_timestamp()}] [{level}] {message}")
+    print(f"[{level}] {message}")
 
 def humanize_date(date_str):
     if not date_str or len(date_str) != 8:
@@ -165,18 +165,14 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
         proxy_display = "127.0.0.1:40000" if USE_WARP else "Direct (Runner IP)"
         
         log("NET", f"Request {attempt}/{max_retries} | Method: {method.upper()} | Proxy: {proxy_display}")
-        log("NET-DEBUG", f"URL: {url}")
-        log("NET-DEBUG", f"Headers: {json.dumps(kwargs.get('headers', {}))}")
         
         try:
-            start_req = time.time()
             if method.upper() == 'GET':
                 resp = cffi_requests.get(url, proxies=current_proxies, impersonate="chrome", timeout=15, **kwargs)
             else:
                 resp = cffi_requests.post(url, proxies=current_proxies, impersonate="chrome", timeout=15, **kwargs)
             
-            elapsed = time.time() - start_req
-            log("NET", f"Received Response | Status: {resp.status_code} | Time: {elapsed:.2f}s | Length: {len(resp.content)} bytes")
+            log("NET", f"Status: {resp.status_code}")
             
             if resp.status_code in [429, 403]:
                 log("WARN", f"Rate limited or forbidden (HTTP {resp.status_code}).")
@@ -212,7 +208,6 @@ def fetch_venue_data():
             continue
             
         try:
-            log("PARSE", f"Parsing JSON response for date {date_code}...")
             data = resp.json()
             show_details_list = data.get("ShowDetails", [])
             log("PARSE-DEBUG", f"Found {len(show_details_list)} item(s) in 'ShowDetails' array.")
