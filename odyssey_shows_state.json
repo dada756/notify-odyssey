@@ -1,12 +1,16 @@
 {
   "known_movies": [
-    "Dhamaal 4",
-    "Lenin",
-    "Srinivasa Mangapuram",
-    "Spider-Man: Brand New Day",
+    "Attack On Titan",
+    "Evil Dead Burn",
     "Chennai Love Story",
-    "Jana Nayagan",
-    "The Odyssey"
+    "Jana Nayakudu",
+    "Lenin",
+    "Spider-Man: Brand New Day",
+    "The Odyssey",
+    "Srinivasa Mangapuram",
+    "The India Story",
+    "Dhamaal 4",
+    "Jana Nayagan"
   ],
   "known_sessions": {
     "252014": {
@@ -414,6 +418,223 @@
       "time": "08:45 AM",
       "screen": "SCREEN 4",
       "format": "HDR By Barco English"
+    },
+    "251862": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "08:45 AM",
+      "screen": "SCREEN 6",
+      "format": "2D English"
+    },
+    "251863": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "12:15 PM",
+      "screen": "SCREEN 6",
+      "format": "2D English"
+    },
+    "251864": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "03:45 PM",
+      "screen": "SCREEN 6",
+      "format": "2D English"
+    },
+    "251865": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "07:15 PM",
+      "screen": "SCREEN 6",
+      "format": "2D English"
+    },
+    "251866": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "10:45 PM",
+      "screen": "SCREEN 6",
+      "format": "2D English"
+    },
+    "253947": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "09:25 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253948": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "12:45 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253949": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "04:10 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253950": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "07:35 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253951": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "11:00 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253973": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "09:30 AM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu"
+    },
+    "253964": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "01:05 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253975": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "04:10 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu"
+    },
+    "253966": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "07:45 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253967": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "11:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253963": {
+      "movie": "Jana Nayagan",
+      "date": "20260729",
+      "time": "09:40 AM",
+      "screen": "SCREEN 1",
+      "format": "2D Tamil"
+    },
+    "253974": {
+      "movie": "Jana Nayagan",
+      "date": "20260729",
+      "time": "12:45 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Tamil"
+    },
+    "253965": {
+      "movie": "Jana Nayagan",
+      "date": "20260729",
+      "time": "04:20 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Tamil"
+    },
+    "253976": {
+      "movie": "Jana Nayagan",
+      "date": "20260729",
+      "time": "07:25 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Tamil"
+    },
+    "253977": {
+      "movie": "Jana Nayagan",
+      "date": "20260729",
+      "time": "10:50 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Tamil"
+    },
+    "254014": {
+      "movie": "Attack On Titan",
+      "date": "20260729",
+      "time": "10:00 AM",
+      "screen": "SCREEN 5",
+      "format": "2D Japanese"
+    },
+    "254027": {
+      "movie": "Attack On Titan",
+      "date": "20260729",
+      "time": "05:20 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Japanese"
+    },
+    "254025": {
+      "movie": "Jana Nayakudu",
+      "date": "20260729",
+      "time": "11:25 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "254028": {
+      "movie": "Jana Nayakudu",
+      "date": "20260729",
+      "time": "08:05 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "254015": {
+      "movie": "Dhamaal 4",
+      "date": "20260729",
+      "time": "12:45 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Hindi"
+    },
+    "254019": {
+      "movie": "Dhamaal 4",
+      "date": "20260729",
+      "time": "11:25 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Hindi"
+    },
+    "254026": {
+      "movie": "The India Story",
+      "date": "20260729",
+      "time": "02:50 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Hindi"
+    },
+    "254029": {
+      "movie": "The India Story",
+      "date": "20260729",
+      "time": "11:30 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Hindi"
+    },
+    "254016": {
+      "movie": "Lenin",
+      "date": "20260729",
+      "time": "03:25 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu"
+    },
+    "254018": {
+      "movie": "Lenin",
+      "date": "20260729",
+      "time": "08:30 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu"
+    },
+    "254017": {
+      "movie": "Evil Dead Burn",
+      "date": "20260729",
+      "time": "06:20 PM",
+      "screen": "SCREEN 5",
+      "format": "2D English"
     }
   }
 }
