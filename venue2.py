@@ -197,7 +197,6 @@ def fetch_venue_data():
     current_sessions = {}
     
     for date_code in DATES:
-        log("POLL", f"Sleeping 6 seconds before querying date: {date_code} to respect rate limits...")
         time.sleep(6) 
         
         url = f"https://in.bookmyshow.com/api/v3/mobile/showtimes/byvenue?appCode=MOBAND2&venueCode={VENUE_CODE}&dateCode={date_code}"
@@ -213,16 +212,13 @@ def fetch_venue_data():
             log("PARSE-DEBUG", f"Found {len(show_details_list)} item(s) in 'ShowDetails' array.")
             
             for sd_idx, show_detail in enumerate(show_details_list):
-                events = show_detail.get("Event", [])
-                log("PARSE-DEBUG", f"ShowDetail block {sd_idx+1} contains {len(events)} Event(s).")
-                
+                events = show_detail.get("Event", [])                
                 for event in events:
                     event_title = event.get("EventTitle", "Unknown Title")
                     current_movies.add(event_title)
                     log("PARSE-DEBUG", f"--> Event: '{event_title}'")
                     
                     child_events = event.get("ChildEvents", [])
-                    log("PARSE-DEBUG", f"    Contains {len(child_events)} ChildEvent(s) (Formats/Languages).")
                     
                     for child in child_events:
                         format_lang = f"{child.get('EventDimension', '')} {child.get('EventLanguage', '')}".strip()
@@ -297,7 +293,7 @@ def main():
         if not is_first_run:
             for movie in new_movies_discovered:
                 log("ALERT", f"🟢 DETECTED NEW MOVIE: {movie}")
-                msg = f"🎬 New Movie Added at ALLU Cinemas!\n\n'{movie}' is now listed. Showtimes are opening."
+                msg = f"New Movie Added at ALLU Cinemas!\n\n'{movie}' is now listed."
                 trigger_ntfy(msg)
                 
             if new_sessions_discovered:
@@ -314,7 +310,7 @@ def main():
                     dates_str = ", ".join(dates)
                     
                     log("ALERT", f"🟢 DETECTED {count} NEW SHOWS FOR: {movie}")
-                    msg = f"🎟️ {count} new showtime(s) added for '{movie}' at ALLU Cinemas!\n\nDates: {dates_str}"
+                    msg = f"{count} new showtime(s) added for '{movie}' at ALLU Cinemas!\n\nDates: {dates_str}"
                     trigger_ntfy(msg)
 
         # 4. Save to GitHub if state mutated
