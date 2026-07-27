@@ -295,7 +295,7 @@ def main():
         cycle_count += 1
         
         print("\n⏳ Sleeping for 20 seconds before the next check...")
-        time.sleep(20)
+        time.sleep(19)
         
     print("\n🏁 Time limit reached (5h 55m). Gracefully shutting down.")
 
