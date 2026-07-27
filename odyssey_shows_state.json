@@ -1,1 +1,419 @@
-
+{
+  "known_movies": [
+    "Dhamaal 4",
+    "Lenin",
+    "Srinivasa Mangapuram",
+    "Spider-Man: Brand New Day",
+    "Chennai Love Story",
+    "Jana Nayagan",
+    "The Odyssey"
+  ],
+  "known_sessions": {
+    "252014": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:00 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "252015": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:00 AM",
+      "screen": "SCREEN 1",
+      "format": "3D English"
+    },
+    "252368": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:00 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English"
+    },
+    "253905": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "10:45 AM",
+      "screen": "SCREEN 1",
+      "format": "3D English"
+    },
+    "252371": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "11:00 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "252018": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "02:00 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "254045": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "05:00 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253838": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "05:25 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English"
+    },
+    "254037": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:15 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English"
+    },
+    "252016": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:20 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "252019": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "11:15 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253238": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:00 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253239": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "10:40 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253237": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "11:30 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253342": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:05 AM",
+      "screen": "SCREEN 5",
+      "format": "2D English"
+    },
+    "253956": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "11:00 AM",
+      "screen": "SCREEN 5",
+      "format": "2D English"
+    },
+    "254063": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "10:45 PM",
+      "screen": "SCREEN 5",
+      "format": "2D English"
+    },
+    "254032": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "08:10 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "254033": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "11:15 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "254039": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "02:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "254034": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "08:20 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "254035": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "11:20 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu"
+    },
+    "253361": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "10:45 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English"
+    },
+    "253362": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "11:05 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English"
+    },
+    "253359": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "01:25 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "254030": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "04:45 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253360": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "08:05 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253827": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "01:30 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253828": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "04:45 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253829": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "08:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253830": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "11:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu"
+    },
+    "253952": {
+      "movie": "Dhamaal 4",
+      "date": "20260730",
+      "time": "01:45 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Hindi"
+    },
+    "253954": {
+      "movie": "Lenin",
+      "date": "20260730",
+      "time": "04:25 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu"
+    },
+    "253834": {
+      "movie": "Jana Nayagan",
+      "date": "20260730",
+      "time": "07:20 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Tamil"
+    },
+    "253021": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 1",
+      "format": "3D English"
+    },
+    "253023": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English"
+    },
+    "251962": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251963": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:10 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251964": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "02:05 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251966": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:15 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251967": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:10 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253273": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253406": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:45 AM",
+      "screen": "SCREEN 5",
+      "format": "2D English"
+    },
+    "251968": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:45 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253906": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:45 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English"
+    },
+    "251969": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "11:40 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251970": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "02:35 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251972": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:45 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251973": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "11:40 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253274": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:45 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    },
+    "253407": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:45 AM",
+      "screen": "SCREEN 5",
+      "format": "2D English"
+    },
+    "251974": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:45 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253907": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:45 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English"
+    },
+    "251975": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "11:40 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251976": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "02:35 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251978": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:45 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "251979": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "11:35 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English"
+    },
+    "253275": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:45 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English"
+    }
+  }
+}
