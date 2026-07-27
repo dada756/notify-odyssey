@@ -7,11 +7,10 @@ import subprocess
 from datetime import datetime
 
 # --- CONFIGURATION ---
-DATES = ["20260730","20260731","20260801","20260802"]
+DATES = ["20260730", "20260731", "20260801", "20260802"]
 VENUE_CODE = "PRHN"
-EVENT_CODE = "ET00505091"
-STATE_FILE = "odyssey_shows_state.json"  # NEW STATE FILE
-MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
+STATE_FILE = "odyssey_shows_state.json"
+MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60)  # 5 hours 55 mins
 
 # Track WARP State natively
 USE_WARP = False
@@ -22,19 +21,30 @@ PROXIES = {
     "https": "socks5://127.0.0.1:40000"
 }
 
+# EXACT HEADERS PROVIDED
 GET_HEADERS = {
     "Host": "in.bookmyshow.com",
-    "Content-Type": "application/json",
     "X-Latitude": "17.385044",
     "X-Subregion-Code": "HYD",
     "X-App-Code": "MOBAND2",
     "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; Android SDK built for x86_64 Build/QSR1.211112.011)",
-    "X-App-Version": "18.2.3",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive"
+    "X-Longitude": "78.48667",
+    "X-Region-Code": "HYD",
+    "X-Platform-Code": "ANDROID",
+    "Accept-Encoding": "gzip, deflate, br"
 }
 
+# --- VERBOSE LOGGING SYSTEM ---
+def get_timestamp():
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+def log(level, message):
+    """Custom logger to prepend timestamp and log level."""
+    print(f"[{level}] {message}")
+
 def humanize_date(date_str):
+    if not date_str or len(date_str) != 8:
+        return date_str
     dt = datetime.strptime(date_str, "%Y%m%d")
     day = dt.day
 
@@ -46,225 +56,290 @@ def humanize_date(date_str):
     month_name = dt.strftime("%B")
     return f"{day}{suffix} {month_name}"
 
-def quiet_git_pull():
-    subprocess.run(["git", "fetch", "origin", "main"], capture_output=True, check=False)
-    subprocess.run(["git", "reset", "--hard", "origin/main"], capture_output=True, check=False)
+# --- GIT OPERATIONS ---
+def verbose_git_pull():
+    log("GIT", "Initiating git fetch and reset to sync state...")
+    
+    fetch_res = subprocess.run(["git", "fetch", "origin", "main"], capture_output=True, text=True, check=False)
+    log("GIT-DEBUG", f"Fetch STDOUT: {fetch_res.stdout.strip()} | STDERR: {fetch_res.stderr.strip()}")
+    
+    reset_res = subprocess.run(["git", "reset", "--hard", "origin/main"], capture_output=True, text=True, check=False)
+    log("GIT-DEBUG", f"Reset STDOUT: {reset_res.stdout.strip()} | STDERR: {reset_res.stderr.strip()}")
 
-def quiet_git_push():
+def verbose_git_push():
+    log("GIT", "Initiating git push to origin/main...")
     res = subprocess.run(["git", "push", "origin", "main"], capture_output=True, text=True, check=False)
+    log("GIT-DEBUG", f"Push STDOUT: {res.stdout.strip()} | STDERR: {res.stderr.strip()}")
     return res.returncode == 0
 
+# --- STATE MANAGEMENT ---
 def read_local_state():
+    log("STATE", f"Looking for local state file: {STATE_FILE}")
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r") as f:
-                return json.load(f)
+                state = json.load(f)
+                if "known_movies" not in state: state["known_movies"] = []
+                if "known_sessions" not in state: state["known_sessions"] = {}
+                log("STATE-DEBUG", f"Successfully parsed JSON. Found {len(state['known_movies'])} movies, {len(state['known_sessions'])} sessions.")
+                return state
         except json.JSONDecodeError as e:
-            print(f"[STATE] ⚠️ JSON Error reading state: {e}")
-            return {}
-    return {}
+            log("ERROR", f"JSON Error reading state: {e}. Defaulting to empty state.")
+            return {"known_movies": [], "known_sessions": {}}
+    log("STATE", "State file not found. Initializing empty state.")
+    return {"known_movies": [], "known_sessions": {}}
 
 def load_state():
-    quiet_git_pull()
+    verbose_git_pull()
     return read_local_state()
 
-def save_state(deltas, commit_msg="Update discovered shows state"):
+def save_state(full_new_state, commit_msg):
+    log("STATE", "Attempting to save state to repository...")
     for attempt in range(3):
-        quiet_git_pull()
-        latest_state = read_local_state()
+        log("STATE", f"Save attempt {attempt+1}/3")
+        verbose_git_pull()
         
-        for s_id, s_data in deltas.items():
-            latest_state[s_id] = s_data
-            
         with open(STATE_FILE, "w") as f:
-            json.dump(latest_state, f, indent=2)
+            json.dump(full_new_state, f, indent=2)
+        log("STATE-DEBUG", f"Written updated JSON to local {STATE_FILE}")
             
-        subprocess.run(["git", "add", STATE_FILE], capture_output=True, check=False)
+        add_res = subprocess.run(["git", "add", STATE_FILE], capture_output=True, text=True, check=False)
+        log("GIT-DEBUG", f"Add STDOUT: {add_res.stdout.strip()} | STDERR: {add_res.stderr.strip()}")
+        
         status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+        log("GIT-DEBUG", f"Status Output:\n{status.stdout.strip()}")
         
         if STATE_FILE in status.stdout:
-            print(f"[GIT] Committing changes to {STATE_FILE} (Attempt {attempt+1})...")
-            subprocess.run(["git", "commit", "-m", commit_msg], capture_output=True, check=False)
+            log("GIT", f"Committing changes: '{commit_msg}'")
+            commit_res = subprocess.run(["git", "commit", "-m", commit_msg], capture_output=True, text=True, check=False)
+            log("GIT-DEBUG", f"Commit STDOUT: {commit_res.stdout.strip()} | STDERR: {commit_res.stderr.strip()}")
             
-            if quiet_git_push():
-                print(f"[GIT] Successfully pushed merged state to repository.")
-                return latest_state
+            if verbose_git_push():
+                log("GIT", "Successfully pushed merged state to repository.")
+                return full_new_state
             else:
-                print(f"[GIT] Push attempt {attempt+1} failed. Retrying merge...")
+                log("WARN", f"Push attempt {attempt+1} failed. Retrying in 2 seconds...")
                 time.sleep(2)
         else:
-            print("[GIT] Merged state is identical to remote. Nothing to push.")
-            return latest_state
+            log("GIT", "Merged state is identical to remote. Nothing to commit or push.")
+            return full_new_state
             
-    print("[GIT] ❌ Failed to push after 3 attempts.")
-    return latest_state
+    log("ERROR", "Failed to push after 3 attempts.")
+    return full_new_state
 
+# --- NOTIFICATION SYSTEM ---
 def trigger_ntfy(message):
-    print(f"\n[!] ALERTING VIA NTFY:\n{message}")
+    log("NTFY", f"Alerting via ntfy. Payload:\n{message}")
     for i in range(1):
         try:
+            start_req = time.time()
             resp = requests.post(
                 "https://ntfy.sh/odssy_stlyt",
                 data=message.encode('utf-8'),
                 headers={"Priority": "urgent"},
                 timeout=10
             )
-            print(f"    -> Ntfy ping {i+1}/1 sent! Status: {resp.status_code}")
+            elapsed = time.time() - start_req
+            log("NTFY-DEBUG", f"Ping {i+1}/1 sent. Status: {resp.status_code}, Response: {resp.text.strip()}, Time: {elapsed:.2f}s")
         except Exception as e:
-            print(f"    -> Ntfy ping {i+1} failed: {e}")
+            log("ERROR", f"Ntfy ping {i+1} failed: {e}")
 
+# --- NETWORK & PROXY ROTATION ---
 def toggle_warp():
     global USE_WARP
     if USE_WARP:
-        print("    -> 🚨 [IP ROTATION] WARP is currently ON. Disconnecting WARP (Switching to Runner IP)...")
-        subprocess.run(["warp-cli", "--accept-tos", "disconnect"], capture_output=True, check=False)
+        log("PROXY", "WARP is ON. Disconnecting WARP (Switching to Runner IP)...")
+        res = subprocess.run(["warp-cli", "--accept-tos", "disconnect"], capture_output=True, text=True, check=False)
+        log("PROXY-DEBUG", f"Disconnect STDOUT: {res.stdout.strip()}")
         USE_WARP = False
     else:
-        print("    -> 🚨 [IP ROTATION] WARP is currently OFF. Connecting to WARP (Switching to Cloudflare Proxy)...")
-        subprocess.run(["warp-cli", "--accept-tos", "connect"], capture_output=True, check=False)
+        log("PROXY", "WARP is OFF. Connecting to WARP (Switching to Cloudflare Proxy)...")
+        res = subprocess.run(["warp-cli", "--accept-tos", "connect"], capture_output=True, text=True, check=False)
+        log("PROXY-DEBUG", f"Connect STDOUT: {res.stdout.strip()}")
         time.sleep(5)
         USE_WARP = True
 
 def make_bms_request(method, url, max_retries=3, **kwargs):
     for attempt in range(1, max_retries + 1):
         current_proxies = PROXIES if USE_WARP else None
+        proxy_display = "127.0.0.1:40000" if USE_WARP else "Direct (Runner IP)"
+        
+        log("NET", f"Request {attempt}/{max_retries} | Method: {method.upper()} | Proxy: {proxy_display}")
+        
         try:
             if method.upper() == 'GET':
                 resp = cffi_requests.get(url, proxies=current_proxies, impersonate="chrome", timeout=15, **kwargs)
             else:
                 resp = cffi_requests.post(url, proxies=current_proxies, impersonate="chrome", timeout=15, **kwargs)
             
-            print(f"    -> Status: {resp.status_code} (Using WARP: {USE_WARP})")
+            log("NET", f"Status: {resp.status_code}")
             
-            if resp.status_code in [429,403]:
-                print(f"    -> ⚠️ Rate limited ({resp.status_code}) on attempt {attempt}/{max_retries}.")
+            if resp.status_code in [429, 403]:
+                log("WARN", f"Rate limited or forbidden (HTTP {resp.status_code}).")
                 if attempt < max_retries:
                     toggle_warp()
-                    print("    -> Retrying request...")
+                    log("NET", "Retrying request with new IP...")
                     continue 
                 else:
-                    print("    -> ❌ Max retries reached for this request.")
+                    log("ERROR", "Max retries reached for this request.")
             return resp
         except Exception as e:
-            print(f"    -> ⚠️ Network exception on attempt {attempt}: {e}")
+            log("ERROR", f"Network exception on attempt {attempt}: {e}")
             if attempt < max_retries:
+                log("NET", "Sleeping for 3 seconds before retry...")
                 time.sleep(3)
                 continue
     return None
 
-def fetch_sessions():
-    sessions = []
+# --- PARSING & SCRAPING ---
+def fetch_venue_data():
+    current_movies = set()
+    current_sessions = {}
+    
     for date_code in DATES:
-        time.sleep(6) # Built-in delay between checking different dates to avoid IP blocks
-        print(f"\n[NETWORK] Fetching sessions for Date: {date_code}...")
-        url = f"https://in.bookmyshow.com/api/movies-data/seatlayout/v1/primary?eventCode={EVENT_CODE}&dateCode={date_code}&regionCode=HYD&venueCode={VENUE_CODE}"
+        time.sleep(6) 
+        
+        url = f"https://in.bookmyshow.com/api/v3/mobile/showtimes/byvenue?appCode=MOBAND2&venueCode={VENUE_CODE}&dateCode={date_code}"
         
         resp = make_bms_request('GET', url, headers=GET_HEADERS)
         if not resp or resp.status_code != 200:
-            print(f"    -> Failed fetching {date_code}. Skipping...")
+            log("WARN", f"Failed fetching {date_code} or non-200 status. Skipping to next date.")
             continue
             
         try:
             data = resp.json()
-            shows = data.get("data", {}).get("showTimes", [])
-            print(f"    -> Found {len(shows)} total shows. Filtering for PCX HDR by BARCO...")
+            show_details_list = data.get("ShowDetails", [])
+            log("PARSE-DEBUG", f"Found {len(show_details_list)} item(s) in 'ShowDetails' array.")
             
-            pcx_count = 0
-            for show in shows:
-                if show.get("attributes") == "PCX HDR by BARCO" or show.get("attributes") == "PCX SCREEN":
-                    sessions.append({
-                        "sessionId": show["sessionId"],
-                        "dateCode": show["showDateCode"],
-                        "time": show["showTime"]
-                    })
-                    pcx_count += 1
-            print(f"    -> Filtered {pcx_count} barco matching sessions for {date_code}.")
-            for show in shows:
-                if show.get("attributes") == "PCX SCREEN":
-                    sessions.append({
-                        "sessionId": show["sessionId"],
-                        "dateCode": show["showDateCode"],
-                        "time": show["showTime"]
-                    })
-                    pcx_count += 1
-            print(f"    -> Filtered {pcx_count} pcx matching sessions for {date_code}.")
-            
+            for sd_idx, show_detail in enumerate(show_details_list):
+                events = show_detail.get("Event", [])                
+                for event in events:
+                    event_title = event.get("EventTitle", "Unknown Title")
+                    current_movies.add(event_title)
+                    log("PARSE-DEBUG", f"--> Event: '{event_title}'")
+                    
+                    child_events = event.get("ChildEvents", [])
+                    
+                    for child in child_events:
+                        format_lang = f"{child.get('EventDimension', '')} {child.get('EventLanguage', '')}".strip()
+                        showtimes = child.get("ShowTimes", [])
+                        log("PARSE-DEBUG", f"    --> Format: '{format_lang}' | {len(showtimes)} Showtime(s) listed.")
+                        
+                        for show in showtimes:
+                            s_id = show.get("SessionId")
+                            s_time = show.get("ShowTime")
+                            s_screen = show.get("ScreenName")
+                            if s_id:
+                                log("PARSE-DEBUG", f"        --> Found Session: {s_id} | {s_time} | {s_screen}")
+                                current_sessions[s_id] = {
+                                    "movie": event_title,
+                                    "date": show.get("ShowDateCode"),
+                                    "time": s_time,
+                                    "screen": s_screen,
+                                    "format": format_lang
+                                }
         except Exception as e:
-            print(f"    -> JSON Parse error for {date_code}: {e}")
+            log("ERROR", f"JSON Parse error for {date_code}: {e}")
             
-    return sessions
+    return current_movies, current_sessions
 
+# --- MAIN LOOP ---
 def main():
     start_time = time.time()
     
-    print("==================================================")
-    print("🚀 STARTING SHOWTIME DISCOVERY MONITOR")
-    print("==================================================")
+    print("\n" + "="*70)
+    log("INFO", "🚀 STARTING ALLU CINEMAS DISCOVERY MONITOR (VERBOSE MODE)")
+    print("="*70 + "\n")
 
-    print("\n[GIT] Loading initial state from repository...")
+    log("INIT", "Loading initial state...")
     state = load_state()
-    is_first_run = len(state) == 0
+    
+    known_movies_mem = set(state.get("known_movies", []))
+    known_sessions_mem = state.get("known_sessions", {})
+    
+    is_first_run = len(known_movies_mem) == 0 and len(known_sessions_mem) == 0
     
     if is_first_run:
-        print("[STATE] Empty state found. Baseline will be initialized on first scan without alerting...")
+        log("INIT", "Empty state found. Baseline will be initialized on first scan without alerting.")
     else:
-        print(f"[STATE] Loaded {len(state)} previously discovered shows from memory.")
+        log("INIT", f"Memory loaded successfully. Known Movies: {len(known_movies_mem)} | Known Sessions: {len(known_sessions_mem)}")
+        log("INIT-DEBUG", f"Known Movies List: {list(known_movies_mem)}")
 
     cycle_count = 1
     
     while (time.time() - start_time) < MAX_RUNTIME_SECONDS:
-        print(f"\n==================================================")
-        print(f"🔄 STARTING POLLING CYCLE {cycle_count}")
-        print(f"==================================================")
+        print("\n" + "="*70)
+        log("INFO", f"🔄 STARTING POLLING CYCLE {cycle_count}")
+        print("="*70 + "\n")
         
-        # 1. Fetch current live sessions from BMS
-        target_sessions = fetch_sessions()
-        deltas = {}
+        # 1. Fetch current live sessions
+        current_movies, current_sessions = fetch_venue_data()
         
-        if not target_sessions:
-            print("    -> No PCX HDR by BARCO sessions found yet.")
-            
-        # 2. Compare against our Git memory
-        for session in target_sessions:
-            s_id = session["sessionId"]
-            s_date = session["dateCode"]
-            s_time = session["time"]
-            
-            # If we find an ID we haven't seen before
-            if s_id not in state:
-                print(f"    -> 🟢 DETECTED NEW SHOW: {s_id} for {s_date} at {s_time}!")
-                
-                # Format exactly as requested
-                human_date = humanize_date(s_date)
-                msg = f"New showtime added for #SpiderManBrandNewDay at PCX HDR by BARCO.\n\n{human_date}, {s_time}"
-                
-                # Only alert if it's NOT the first initialization run 
-                # (to avoid getting spammed with existing shows when you first boot up)
-                if not is_first_run:
-                    trigger_ntfy(msg)
-                
-                # Save it to our state so we don't alert again in the next cycle
-                state[s_id] = {"date": s_date, "time": s_time}
-                deltas[s_id] = state[s_id]
+        log("LOGIC", f"Data extraction complete. Found {len(current_movies)} unique movies and {len(current_sessions)} total sessions.")
+        
+        new_movies_discovered = current_movies - known_movies_mem
+        new_sessions_discovered = {}
+        
+        # 2. Compare against our memory
+        log("LOGIC", "Comparing extracted sessions against local memory state...")
+        for s_id, s_data in current_sessions.items():
+            if s_id not in known_sessions_mem:
+                log("LOGIC-DEBUG", f"Unrecognized Session ID found: {s_id} for '{s_data['movie']}'")
+                new_sessions_discovered[s_id] = s_data
 
-        # 3. If new shows were found, save to GitHub to act as persistent memory
-        if deltas:
-            print(f"\n[STATE] Cycle finished. {len(deltas)} new show(s) detected, committing to Git...")
-            state = save_state(deltas, f"Added {len(deltas)} new shows at cycle {cycle_count}")
+        log("LOGIC", f"Comparison complete. {len(new_movies_discovered)} new movies, {len(new_sessions_discovered)} new sessions.")
+
+        # 3. Alerting Logic
+        if not is_first_run:
+            for movie in new_movies_discovered:
+                log("ALERT", f"🟢 DETECTED NEW MOVIE: {movie}")
+                msg = f"New Movie Added at ALLU Cinemas!\n\n'{movie}' is now listed."
+                trigger_ntfy(msg)
+                
+            if new_sessions_discovered:
+                sessions_by_movie = {}
+                for s_id, s_data in new_sessions_discovered.items():
+                    m = s_data["movie"]
+                    if m not in sessions_by_movie:
+                        sessions_by_movie[m] = []
+                    sessions_by_movie[m].append(s_data)
+                    
+                for movie, sessions in sessions_by_movie.items():
+                    count = len(sessions)
+                    dates = sorted(list(set([humanize_date(s["date"]) for s in sessions if s.get("date")])))
+                    dates_str = ", ".join(dates)
+                    
+                    log("ALERT", f"🟢 DETECTED {count} NEW SHOWS FOR: {movie}")
+                    msg = f"{count} new showtime(s) added for '{movie}' at ALLU Cinemas!\n\nDates: {dates_str}"
+                    trigger_ntfy(msg)
+
+        # 4. Save to GitHub if state mutated
+        if new_movies_discovered or new_sessions_discovered:
+            log("STATE", f"Cycle {cycle_count} mutated state. Updating GitHub...")
+            
+            known_movies_mem.update(new_movies_discovered)
+            known_sessions_mem.update(new_sessions_discovered)
+            
+            full_new_state = {
+                "known_movies": list(known_movies_mem),
+                "known_sessions": known_sessions_mem
+            }
+            
+            commit_message = f"Added {len(new_movies_discovered)} movies, {len(new_sessions_discovered)} shows at cycle {cycle_count}"
+            save_state(full_new_state, commit_message)
         else:
-            print("\n[STATE] Cycle finished. No new shows detected.")
+            log("STATE", "No mutations detected in this cycle. Skipping Git operations.")
             
         if is_first_run:
             is_first_run = False
-            print("[STATE] First run baseline successfully established. Alerts are now armed.")
+            log("INIT", "First run baseline successfully established. Alerts are now ARMED for next cycle.")
             
         cycle_count += 1
         
-        # 4. The requested 20-second wait before the next loop iteration begins
-        print("\n⏳ Sleeping for 20 seconds before the next check...")
-        time.sleep(20)
+        log("INFO", "⏳ Sleeping for 20 seconds before the next loop...")
+        time.sleep(19)
         
-    print("\n🏁 Time limit reached (5h 55m). Gracefully shutting down.")
+    log("INFO", "🏁 Time limit reached (5h 55m). Gracefully shutting down to prevent runner force-kill.")
 
 if __name__ == "__main__":
     main()
