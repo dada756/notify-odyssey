@@ -1,16 +1,16 @@
 {
   "known_movies": [
-    "Evil Dead Burn",
-    "Chennai Love Story",
-    "Srinivasa Mangapuram",
-    "Spider-Man: Brand New Day",
-    "The India Story",
-    "Dhamaal 4",
     "Jana Nayakudu",
-    "Jana Nayagan",
-    "The Odyssey",
     "Lenin",
-    "Attack On Titan"
+    "The Odyssey",
+    "Spider-Man: Brand New Day",
+    "Evil Dead Burn",
+    "Dhamaal 4",
+    "Srinivasa Mangapuram",
+    "Attack On Titan",
+    "Chennai Love Story",
+    "Jana Nayagan",
+    "The India Story"
   ],
   "known_sessions": {
     "252014": {
@@ -653,6 +653,105 @@
       "format": "2D English",
       "attribute": "BARCO 4K LASER",
       "datetime": "202607301405"
+    },
+    "254047": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607311045"
+    },
+    "254053": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "05:05 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607311705"
+    },
+    "254055": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:15 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607312015"
+    },
+    "253908": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "05:25 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607311725"
+    },
+    "254046": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:30 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607312330"
+    },
+    "253363": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607311045"
+    },
+    "254048": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "01:30 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "BARCO 4K LASER/PCX HDR by BARCO",
+      "datetime": "202607311330"
+    },
+    "253364": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "02:05 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607311405"
+    },
+    "254054": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "04:50 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202607311650"
+    },
+    "253365": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607312010"
+    },
+    "253366": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "11:05 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202607312305"
     }
   }
 }
