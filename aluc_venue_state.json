@@ -1,7 +1,10 @@
 {
   "known_movies": [
-    "The Odyssey",
-    "Spider-Man: Brand New Day"
+    "Spider-Man: Brand New Day",
+    "Lenin",
+    "Jana Nayakudu",
+    "Chennai Love Story",
+    "The Odyssey"
   ],
   "known_sessions": {
     "3336": {
@@ -219,6 +222,114 @@
       "format": "DOLBY CINEMA 3D English",
       "attribute": "DOLBY CINEMA",
       "datetime": "202608022315"
+    },
+    "3450": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "11:30 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291130"
+    },
+    "3453": {
+      "movie": "The Odyssey",
+      "date": "20260729",
+      "time": "10:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607292220"
+    },
+    "3446": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "11:00 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291100"
+    },
+    "3447": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "02:30 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291430"
+    },
+    "3451": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "03:00 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291500"
+    },
+    "3456": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "06:45 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291845"
+    },
+    "3448": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "07:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291900"
+    },
+    "3449": {
+      "movie": "Chennai Love Story",
+      "date": "20260729",
+      "time": "10:45 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607292245"
+    },
+    "3454": {
+      "movie": "Jana Nayakudu",
+      "date": "20260729",
+      "time": "11:30 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291130"
+    },
+    "3455": {
+      "movie": "Jana Nayakudu",
+      "date": "20260729",
+      "time": "03:05 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291505"
+    },
+    "3457": {
+      "movie": "Jana Nayakudu",
+      "date": "20260729",
+      "time": "10:25 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607292225"
+    },
+    "3452": {
+      "movie": "Lenin",
+      "date": "20260729",
+      "time": "06:55 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607291855"
     }
   }
 }
