@@ -24,14 +24,12 @@ PROXIES = {
 # EXACT HEADERS PROVIDED
 GET_HEADERS = {
     "Host": "in.bookmyshow.com",
-    "Content-Type": "application/json",
     "X-Latitude": "17.385044",
     "X-Subregion-Code": "HYD",
     "X-App-Code": "MOBAND2",
-    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; Android SDK built for x86_64 Build/QSR1.211112.011)",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
     "X-App-Version": "18.2.3",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive"
+    "Accept-Encoding": "gzip, deflate, br"
 }
 
 # --- VERBOSE LOGGING SYSTEM ---
