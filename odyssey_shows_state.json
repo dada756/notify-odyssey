@@ -1,16 +1,16 @@
 {
   "known_movies": [
-    "Attack On Titan",
-    "Evil Dead Burn",
-    "Chennai Love Story",
+    "Jana Nayagan",
     "Jana Nayakudu",
-    "Lenin",
-    "Spider-Man: Brand New Day",
-    "The Odyssey",
-    "Srinivasa Mangapuram",
+    "Chennai Love Story",
     "The India Story",
+    "Attack On Titan",
     "Dhamaal 4",
-    "Jana Nayagan"
+    "Spider-Man: Brand New Day",
+    "Srinivasa Mangapuram",
+    "Evil Dead Burn",
+    "The Odyssey",
+    "Lenin"
   ],
   "known_sessions": {
     "252014": {
@@ -635,6 +635,24 @@
       "time": "06:20 PM",
       "screen": "SCREEN 5",
       "format": "2D English"
+    },
+    "254038": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "05:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607301715"
+    },
+    "254076": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "02:05 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607301405"
     }
   }
 }
