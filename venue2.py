@@ -188,7 +188,7 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
             log("ERROR", f"Network exception on attempt {attempt}: {e}")
             if attempt < max_retries:
                 log("NET", "Sleeping for 3 seconds before retry...")
-                time.sleep(3)
+                time.sleep(5)
                 continue
     return None
 
@@ -352,7 +352,7 @@ def main():
         cycle_count += 1
         
         log("INFO", "⏳ Sleeping for 20 seconds before the next loop...")
-        time.sleep(21)
+        time.sleep(28)
         
     log("INFO", "🏁 Time limit reached (5h 55m). Gracefully shutting down to prevent runner force-kill.")
 
