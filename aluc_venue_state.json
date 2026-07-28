@@ -1,10 +1,11 @@
 {
   "known_movies": [
-    "Spider-Man: Brand New Day",
-    "Chennai Love Story",
-    "Lenin",
     "Jana Nayakudu",
-    "The Odyssey"
+    "Srinivasa Mangapuram",
+    "Chennai Love Story",
+    "The Odyssey",
+    "Spider-Man: Brand New Day",
+    "Lenin"
   ],
   "known_sessions": {
     "3336": {
@@ -591,6 +592,33 @@
       "format": "2D Telugu",
       "attribute": "BARCO LASER 4K ATMOS",
       "datetime": "202607302320"
+    },
+    "3458": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "01:40 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301340"
+    },
+    "3459": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "04:45 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301645"
+    },
+    "3460": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260730",
+      "time": "11:15 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607302315"
     }
   }
 }
