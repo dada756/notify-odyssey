@@ -1,10 +1,10 @@
 {
   "known_movies": [
-    "Spider-Man: Brand New Day",
-    "Chennai Love Story",
-    "Lenin",
     "Jana Nayakudu",
-    "The Odyssey"
+    "Lenin",
+    "Spider-Man: Brand New Day",
+    "The Odyssey",
+    "Chennai Love Story"
   ],
   "known_sessions": {
     "3336": {
