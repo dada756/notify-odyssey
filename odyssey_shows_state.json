@@ -1,16 +1,17 @@
 {
   "known_movies": [
-    "The Odyssey",
-    "The India Story",
-    "Chennai Love Story",
+    "Jana Nayakudu",
     "Lenin",
-    "Attack On Titan",
-    "Jana Nayagan",
-    "Srinivasa Mangapuram",
+    "The Odyssey",
     "Spider-Man: Brand New Day",
     "Evil Dead Burn",
     "Dhamaal 4",
-    "Jana Nayakudu"
+    "Srinivasa Mangapuram",
+    "Karmakhya",
+    "Attack On Titan",
+    "Chennai Love Story",
+    "Jana Nayagan",
+    "The India Story"
   ],
   "known_sessions": {
     "252014": {
@@ -986,6 +987,15 @@
       "format": "HDR By Barco English",
       "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
       "datetime": "202608022335"
+    },
+    "254075": {
+      "movie": "Karmakhya",
+      "date": "20260730",
+      "time": "07:45 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607301945"
     }
   }
 }
