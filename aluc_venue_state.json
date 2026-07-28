@@ -1,9 +1,9 @@
 {
   "known_movies": [
     "Jana Nayakudu",
+    "Chennai Love Story",
     "The Odyssey",
     "Spider-Man: Brand New Day",
-    "Chennai Love Story",
     "Lenin"
   ],
   "known_sessions": {
@@ -564,6 +564,33 @@
       "format": "2D Telugu",
       "attribute": "BARCO LASER 4K ATMOS",
       "datetime": "202607291445"
+    },
+    "3389": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "10:15 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301015"
+    },
+    "3390": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "07:50 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301950"
+    },
+    "3461": {
+      "movie": "Chennai Love Story",
+      "date": "20260730",
+      "time": "11:20 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607302320"
     }
   }
 }
