@@ -1,10 +1,10 @@
 {
   "known_movies": [
-    "The Odyssey",
+    "Spider-Man: Brand New Day",
     "Jana Nayakudu",
-    "Chennai Love Story",
     "Lenin",
-    "Spider-Man: Brand New Day"
+    "The Odyssey",
+    "Chennai Love Story"
   ],
   "known_sessions": {
     "3336": {
@@ -411,6 +411,141 @@
       "format": "2D English",
       "attribute": "BARCO LASER 4K ATMOS",
       "datetime": "202607302325"
+    },
+    "3462": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "10:00 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607311000"
+    },
+    "3463": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "01:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607311320"
+    },
+    "3464": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "04:40 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607311640"
+    },
+    "3465": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "08:00 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607312000"
+    },
+    "3466": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "11:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607312320"
+    },
+    "3467": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "10:00 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608011000"
+    },
+    "3468": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "01:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608011320"
+    },
+    "3469": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "04:40 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608011640"
+    },
+    "3470": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "08:00 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608012000"
+    },
+    "3471": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "11:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608012320"
+    },
+    "3472": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "10:00 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608021000"
+    },
+    "3473": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "01:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608021320"
+    },
+    "3474": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "04:40 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608021640"
+    },
+    "3475": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "08:00 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608022000"
+    },
+    "3476": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "11:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608022320"
     }
   }
 }
