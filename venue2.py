@@ -351,7 +351,7 @@ def main():
         cycle_count += 1
         
         log("INFO", "⏳ Sleeping for 20 seconds before the next loop...")
-        time.sleep(28)
+        time.sleep(24)
         
     log("INFO", "🏁 Time limit reached (5h 55m). Gracefully shutting down to prevent runner force-kill.")
 
