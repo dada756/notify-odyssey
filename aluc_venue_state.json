@@ -330,6 +330,87 @@
       "format": "2D Telugu",
       "attribute": "BARCO LASER 4K ATMOS",
       "datetime": "202607291855"
+    },
+    "3379": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "11:40 AM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301140"
+    },
+    "3382": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "02:35 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301435"
+    },
+    "3383": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "05:30 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301730"
+    },
+    "3380": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260730",
+      "time": "08:25 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607302025"
+    },
+    "3384": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "10:05 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301005"
+    },
+    "3385": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "01:25 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301325"
+    },
+    "3386": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "04:45 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607301645"
+    },
+    "3387": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "08:05 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607302005"
+    },
+    "3388": {
+      "movie": "The Odyssey",
+      "date": "20260730",
+      "time": "11:25 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202607302325"
     }
   }
 }
