@@ -230,14 +230,24 @@ def fetch_venue_data():
                             s_id = show.get("SessionId")
                             s_time = show.get("ShowTime")
                             s_screen = show.get("ScreenName")
+                            
+                            # Extract Attributes and ShowDateTime for precise sorting/formatting
+                            s_attr = show.get("Attributes", "")
+                            if not s_attr:
+                                s_attr = " "
+                                
+                            s_datetime = show.get("ShowDateTime", "")
+                            
                             if s_id:
-                                log("PARSE-DEBUG", f"        --> Found Session: {s_id} | {s_time} | {s_screen}")
+                                log("PARSE-DEBUG", f"        --> Found Session: {s_id} | {s_time} | {s_attr} | {s_screen}")
                                 current_sessions[s_id] = {
                                     "movie": event_title,
                                     "date": show.get("ShowDateCode"),
                                     "time": s_time,
                                     "screen": s_screen,
-                                    "format": format_lang
+                                    "format": format_lang,
+                                    "attribute": s_attr,
+                                    "datetime": s_datetime
                                 }
         except Exception as e:
             log("ERROR", f"JSON Parse error for {date_code}: {e}")
@@ -292,24 +302,30 @@ def main():
 
         # 3. Alerting Logic
         if not is_first_run:
-            for movie in new_movies_discovered:
-                log("ALERT", f"🟢 DETECTED NEW MOVIE: {movie}")
-                
             if new_sessions_discovered:
-                sessions_by_movie = {}
+                sessions_grouped = {}
+                # Group by both Movie Title and Screen Attribute
                 for s_id, s_data in new_sessions_discovered.items():
-                    m = s_data["movie"]
-                    if m not in sessions_by_movie:
-                        sessions_by_movie[m] = []
-                    sessions_by_movie[m].append(s_data)
+                    group_key = (s_data["movie"], s_data["attribute"])
+                    if group_key not in sessions_grouped:
+                        sessions_grouped[group_key] = []
+                    sessions_grouped[group_key].append(s_data)
                     
-                for movie, sessions in sessions_by_movie.items():
-                    count = len(sessions)
-                    dates = sorted(list(set([humanize_date(s["date"]) for s in sessions if s.get("date")])))
-                    dates_str = ", ".join(dates)
+                for (movie, attribute), sessions in sessions_grouped.items():
+                    # Sort chronologically by the raw datetime string
+                    sorted_sessions = sorted(sessions, key=lambda x: x.get("datetime", ""))
                     
-                    log("ALERT", f"🟢 DETECTED {count} NEW SHOWS FOR: {movie}")
-                    msg = f"{count} New showtimes added for '{movie}' at Prasads Cinemas!\n\nDates: {dates_str}"
+                    # Construct message
+                    msg = f"New Showtimes added for {movie} in {attribute} at Prasads Multiplex\n\n"
+                    
+                    lines = []
+                    for s in sorted_sessions:
+                        # e.g., "29th July, 08:45 AM"
+                        lines.append(f"{humanize_date(s['date'])}, {s['time']}")
+                        
+                    msg += "\n".join(lines)
+                    
+                    log("ALERT", f"🟢 DETECTED {len(sessions)} NEW SHOWS FOR: {movie} ({attribute})")
                     trigger_ntfy(msg)
 
         # 4. Save to GitHub if state mutated
