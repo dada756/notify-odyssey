@@ -1,16 +1,16 @@
 {
   "known_movies": [
-    "Dhamaal 4",
-    "Attack On Titan",
-    "Srinivasa Mangapuram",
-    "Jana Nayakudu",
-    "The India Story",
-    "The Odyssey",
-    "Chennai Love Story",
-    "Jana Nayagan",
     "Lenin",
+    "Jana Nayagan",
+    "Attack On Titan",
     "Spider-Man: Brand New Day",
-    "Evil Dead Burn"
+    "The India Story",
+    "Srinivasa Mangapuram",
+    "Evil Dead Burn",
+    "Dhamaal 4",
+    "The Odyssey",
+    "Jana Nayakudu",
+    "Chennai Love Story"
   ],
   "known_sessions": {
     "252014": {
