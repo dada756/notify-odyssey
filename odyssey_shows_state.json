@@ -1,16 +1,16 @@
 {
   "known_movies": [
-    "The Odyssey",
-    "The India Story",
-    "Chennai Love Story",
+    "Jana Nayakudu",
     "Lenin",
-    "Attack On Titan",
-    "Jana Nayagan",
-    "Srinivasa Mangapuram",
+    "The Odyssey",
     "Spider-Man: Brand New Day",
     "Evil Dead Burn",
     "Dhamaal 4",
-    "Jana Nayakudu"
+    "Srinivasa Mangapuram",
+    "Attack On Titan",
+    "Chennai Love Story",
+    "Jana Nayagan",
+    "The India Story"
   ],
   "known_sessions": {
     "252014": {
@@ -752,6 +752,240 @@
       "format": "HDR By Barco English",
       "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
       "datetime": "202607312305"
+    },
+    "254081": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:00 AM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202608010800"
+    },
+    "254087": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:00 AM",
+      "screen": "SCREEN 1",
+      "format": "3D English",
+      "attribute": " ",
+      "datetime": "202608010800"
+    },
+    "254056": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "11:30 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202608011130"
+    },
+    "254061": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "05:40 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202608011740"
+    },
+    "254059": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "08:50 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202608012050"
+    },
+    "253913": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "06:00 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608011800"
+    },
+    "254044": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260801",
+      "time": "11:55 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608012355"
+    },
+    "253909": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "11:30 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608011130"
+    },
+    "254057": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "02:10 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202608011410"
+    },
+    "253910": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "02:45 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608011445"
+    },
+    "254058": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "05:30 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "BARCO 4K LASER/PCX HDR by BARCO",
+      "datetime": "202608011730"
+    },
+    "253911": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "08:40 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608012040"
+    },
+    "254060": {
+      "movie": "The Odyssey",
+      "date": "20260801",
+      "time": "11:35 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202608012335"
+    },
+    "254095": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:00 AM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202608020800"
+    },
+    "254094": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:00 AM",
+      "screen": "SCREEN 1",
+      "format": "3D English",
+      "attribute": " ",
+      "datetime": "202608020800"
+    },
+    "254064": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "11:30 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202608021130"
+    },
+    "254093": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "05:40 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202608021740"
+    },
+    "254067": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "08:50 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202608022050"
+    },
+    "254071": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "06:00 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608021800"
+    },
+    "254073": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260802",
+      "time": "11:55 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608022355"
+    },
+    "254069": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "11:30 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608021130"
+    },
+    "254065": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "02:10 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202608021410"
+    },
+    "254070": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "02:45 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608021445"
+    },
+    "254066": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "05:30 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202608021730"
+    },
+    "254072": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "08:40 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202608022040"
+    },
+    "254068": {
+      "movie": "The Odyssey",
+      "date": "20260802",
+      "time": "11:35 PM",
+      "screen": "SCREEN 3",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO/BARCO 4K LASER",
+      "datetime": "202608022335"
     }
   }
 }
