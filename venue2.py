@@ -31,7 +31,8 @@ GET_HEADERS = {
     "X-Longitude": "78.48667",
     "X-Region-Code": "HYD",
     "X-Platform-Code": "ANDROID",
-    "Accept-Encoding": "gzip, deflate, br"
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
 }
 
 # --- VERBOSE LOGGING SYSTEM ---
