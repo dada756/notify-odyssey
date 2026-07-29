@@ -1,17 +1,17 @@
 {
   "known_movies": [
-    "Spider-Man: Brand New Day",
-    "The India Story",
-    "Chennai Love Story",
-    "Attack On Titan",
     "Lenin",
-    "Jana Nayakudu",
     "Jana Nayagan",
+    "Chennai Love Story",
     "Dhamaal 4",
+    "The India Story",
     "The Odyssey",
-    "Evil Dead Burn",
     "Srinivasa Mangapuram",
-    "Karmakhya"
+    "Spider-Man: Brand New Day",
+    "Karmakhya",
+    "Attack On Titan",
+    "Evil Dead Burn",
+    "Jana Nayakudu"
   ],
   "known_sessions": {
     "252014": {
@@ -1006,33 +1006,6 @@
       "attribute": " ",
       "datetime": "202607310800"
     },
-    "254116": {
-      "movie": "The Odyssey",
-      "date": "20260731",
-      "time": "01:30 PM",
-      "screen": "SCREEN 3",
-      "format": "2D English",
-      "attribute": "BARCO 4K LASER",
-      "datetime": "202607311330"
-    },
-    "254117": {
-      "movie": "The Odyssey",
-      "date": "20260731",
-      "time": "04:50 PM",
-      "screen": "SCREEN 3",
-      "format": "2D English",
-      "attribute": "BARCO 4K LASER",
-      "datetime": "202607311650"
-    },
-    "254118": {
-      "movie": "The Odyssey",
-      "date": "20260731",
-      "time": "11:05 PM",
-      "screen": "SCREEN 3",
-      "format": "2D English",
-      "attribute": "BARCO 4K LASER",
-      "datetime": "202607312305"
-    },
     "254119": {
       "movie": "The Odyssey",
       "date": "20260801",
@@ -1086,6 +1059,33 @@
       "format": "2D English",
       "attribute": "BARCO 4K LASER",
       "datetime": "202608022335"
+    },
+    "254116": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "01:30 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607311330"
+    },
+    "254117": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "04:50 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607311650"
+    },
+    "254118": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "11:05 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607312305"
     }
   }
 }
