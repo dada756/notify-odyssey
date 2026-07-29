@@ -1,19 +1,19 @@
 {
   "known_movies": [
     "Srinivasa Mangapuram",
-    "Lenin",
-    "Karmakhya",
-    "Newton's 3rd Law",
-    "Dhamaal 4",
-    "Jana Nayagan",
-    "Spider-Man: Brand New Day",
-    "Evil Dead Burn",
     "Unmadham",
+    "The India Story",
+    "Chennai Love Story",
+    "Spider-Man: Brand New Day",
+    "Jana Nayagan",
     "Jana Nayakudu",
     "The Odyssey",
-    "Chennai Love Story",
-    "The India Story",
-    "Attack On Titan"
+    "Newton's 3rd Law",
+    "Dhamaal 4",
+    "Evil Dead Burn",
+    "Attack On Titan",
+    "Karmakhya",
+    "Lenin"
   ],
   "known_sessions": {
     "252014": {
