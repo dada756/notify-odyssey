@@ -1086,6 +1086,150 @@
       "format": "2D English",
       "attribute": "BARCO 4K LASER",
       "datetime": "202607312305"
+    },
+    "254101": {
+      "movie": "Chennai Love Story",
+      "date": "20260801",
+      "time": "10:45 AM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608011045"
+    },
+    "254083": {
+      "movie": "Chennai Love Story",
+      "date": "20260801",
+      "time": "01:45 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608011345"
+    },
+    "254085": {
+      "movie": "Chennai Love Story",
+      "date": "20260801",
+      "time": "08:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608012000"
+    },
+    "254105": {
+      "movie": "Chennai Love Story",
+      "date": "20260801",
+      "time": "11:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608012315"
+    },
+    "254082": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260801",
+      "time": "10:45 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608011045"
+    },
+    "254102": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260801",
+      "time": "02:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608011400"
+    },
+    "254104": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260801",
+      "time": "08:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608012015"
+    },
+    "254086": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260801",
+      "time": "11:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608012315"
+    },
+    "254106": {
+      "movie": "Chennai Love Story",
+      "date": "20260802",
+      "time": "10:45 AM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608021045"
+    },
+    "254112": {
+      "movie": "Chennai Love Story",
+      "date": "20260802",
+      "time": "01:45 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608021345"
+    },
+    "254114": {
+      "movie": "Chennai Love Story",
+      "date": "20260802",
+      "time": "08:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608022000"
+    },
+    "254110": {
+      "movie": "Chennai Love Story",
+      "date": "20260802",
+      "time": "11:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608022315"
+    },
+    "254111": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260802",
+      "time": "10:45 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608021045"
+    },
+    "254107": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260802",
+      "time": "02:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608021400"
+    },
+    "254109": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260802",
+      "time": "08:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608022015"
+    },
+    "254115": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260802",
+      "time": "11:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202608022315"
     }
   }
 }
