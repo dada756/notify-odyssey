@@ -1,17 +1,19 @@
 {
   "known_movies": [
-    "Srinivasa Mangapuram",
-    "The India Story",
-    "Chennai Love Story",
-    "Spider-Man: Brand New Day",
-    "Jana Nayagan",
-    "Jana Nayakudu",
     "The Odyssey",
-    "Dhamaal 4",
-    "Evil Dead Burn",
-    "Attack On Titan",
+    "The India Story",
     "Karmakhya",
-    "Lenin"
+    "Jana Nayagan",
+    "Srinivasa Mangapuram",
+    "Jana Nayakudu",
+    "Dhamaal 4",
+    "Chennai Love Story",
+    "Unmadham",
+    "Newton's 3rd Law",
+    "Attack On Titan",
+    "Lenin",
+    "Spider-Man: Brand New Day",
+    "Evil Dead Burn"
   ],
   "known_sessions": {
     "252014": {
@@ -1086,6 +1088,132 @@
       "format": "2D English",
       "attribute": "BARCO 4K LASER",
       "datetime": "202607312305"
+    },
+    "254077": {
+      "movie": "Karmakhya",
+      "date": "20260731",
+      "time": "09:00 AM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607310900"
+    },
+    "253980": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311045"
+    },
+    "253981": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "01:45 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311345"
+    },
+    "253983": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "08:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312000"
+    },
+    "253984": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "11:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312315"
+    },
+    "254040": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311045"
+    },
+    "254042": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "02:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311400"
+    },
+    "254043": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "08:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312015"
+    },
+    "254041": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "11:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312315"
+    },
+    "254049": {
+      "movie": "Newton's 3rd Law",
+      "date": "20260731",
+      "time": "11:30 AM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311130"
+    },
+    "254050": {
+      "movie": "Newton's 3rd Law",
+      "date": "20260731",
+      "time": "05:15 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311715"
+    },
+    "254079": {
+      "movie": "Lenin",
+      "date": "20260731",
+      "time": "02:15 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311415"
+    },
+    "254062": {
+      "movie": "Unmadham",
+      "date": "20260731",
+      "time": "08:00 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Malayalam",
+      "attribute": " ",
+      "datetime": "202607312000"
+    },
+    "254078": {
+      "movie": "Dhamaal 4",
+      "date": "20260731",
+      "time": "10:50 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Hindi",
+      "attribute": " ",
+      "datetime": "202607312250"
     },
     "254101": {
       "movie": "Chennai Love Story",
