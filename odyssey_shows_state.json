@@ -1,14 +1,14 @@
 {
   "known_movies": [
-    "Spider-Man: Brand New Day",
-    "Karmakhya",
-    "Chennai Love Story",
-    "Lenin",
-    "Dhamaal 4",
     "Srinivasa Mangapuram",
-    "The Odyssey",
+    "Chennai Love Story",
     "Newton's 3rd Law",
-    "Unmadham"
+    "Karmakhya",
+    "The Odyssey",
+    "Unmadham",
+    "Spider-Man: Brand New Day",
+    "Lenin",
+    "Dhamaal 4"
   ],
   "known_sessions": {
     "254080": {
