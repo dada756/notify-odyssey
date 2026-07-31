@@ -1,1 +1,339 @@
-
+{
+  "known_movies": [
+    "Spider-Man: Brand New Day",
+    "Srinivasa Mangapuram",
+    "Chennai Love Story",
+    "Unmadham",
+    "Dhamaal 4",
+    "The Odyssey",
+    "Lenin",
+    "Newton's 3rd Law",
+    "Karmakhya"
+  ],
+  "known_sessions": {
+    "254080": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202607310800"
+    },
+    "254150": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "10:55 AM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202607311055"
+    },
+    "254152": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:20 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202607312320"
+    },
+    "253021": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 1",
+      "format": "3D English",
+      "attribute": " ",
+      "datetime": "202607310800"
+    },
+    "253023": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607310800"
+    },
+    "251962": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607310815"
+    },
+    "254047": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607311045"
+    },
+    "251963": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:10 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607311110"
+    },
+    "251964": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "02:05 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607311405"
+    },
+    "254053": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "05:05 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607311705"
+    },
+    "251966": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:15 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607312015"
+    },
+    "254055": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:15 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607312015"
+    },
+    "251967": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:10 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202607312310"
+    },
+    "253273": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "08:00 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607310800"
+    },
+    "253908": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "05:25 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607311725"
+    },
+    "254046": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:30 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607312330"
+    },
+    "254077": {
+      "movie": "Karmakhya",
+      "date": "20260731",
+      "time": "09:00 AM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607310900"
+    },
+    "253980": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311045"
+    },
+    "253981": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "01:45 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311345"
+    },
+    "254100": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "05:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311700"
+    },
+    "253983": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "08:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312000"
+    },
+    "253984": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "11:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312315"
+    },
+    "253363": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "10:45 AM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607311045"
+    },
+    "253364": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "02:05 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607311405"
+    },
+    "253365": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "format": "HDR By Barco English",
+      "attribute": "PCX HDR by BARCO",
+      "datetime": "202607312010"
+    },
+    "254116": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "01:30 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607311330"
+    },
+    "254117": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "04:50 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607311650"
+    },
+    "254118": {
+      "movie": "The Odyssey",
+      "date": "20260731",
+      "time": "11:05 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO 4K LASER",
+      "datetime": "202607312305"
+    },
+    "254049": {
+      "movie": "Newton's 3rd Law",
+      "date": "20260731",
+      "time": "11:30 AM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311130"
+    },
+    "254050": {
+      "movie": "Newton's 3rd Law",
+      "date": "20260731",
+      "time": "05:15 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311715"
+    },
+    "254042": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "02:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311400"
+    },
+    "254074": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "05:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311700"
+    },
+    "254043": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "08:15 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607312015"
+    },
+    "254079": {
+      "movie": "Lenin",
+      "date": "20260731",
+      "time": "02:15 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311415"
+    },
+    "254062": {
+      "movie": "Unmadham",
+      "date": "20260731",
+      "time": "08:00 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Malayalam",
+      "attribute": " ",
+      "datetime": "202607312000"
+    },
+    "254078": {
+      "movie": "Dhamaal 4",
+      "date": "20260731",
+      "time": "10:50 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Hindi",
+      "attribute": " ",
+      "datetime": "202607312250"
+    }
+  }
+}
