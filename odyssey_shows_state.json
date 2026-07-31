@@ -1,19 +1,19 @@
 {
   "known_movies": [
-    "Karmakhya",
-    "Newton's 3rd Law",
-    "Lenin",
-    "Unmadham",
-    "Srinivasa Mangapuram",
-    "Evil Dead Burn",
-    "The Odyssey",
-    "Jana Nayagan",
-    "Jana Nayakudu",
-    "Spider-Man: Brand New Day",
-    "Chennai Love Story",
     "Dhamaal 4",
+    "Srinivasa Mangapuram",
+    "Spider-Man: Brand New Day",
+    "Evil Dead Burn",
+    "Chennai Love Story",
+    "Newton's 3rd Law",
+    "Attack On Titan",
+    "Lenin",
+    "Jana Nayagan",
     "The India Story",
-    "Attack On Titan"
+    "Unmadham",
+    "Karmakhya",
+    "The Odyssey",
+    "Jana Nayakudu"
   ],
   "known_sessions": {
     "252014": {
@@ -1358,6 +1358,42 @@
       "format": "2D Hindi",
       "attribute": " ",
       "datetime": "202607312250"
+    },
+    "254150": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "10:55 AM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202607311055"
+    },
+    "254152": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260731",
+      "time": "11:20 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": " ",
+      "datetime": "202607312320"
+    },
+    "254100": {
+      "movie": "Chennai Love Story",
+      "date": "20260731",
+      "time": "05:00 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311700"
+    },
+    "254074": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260731",
+      "time": "05:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": " ",
+      "datetime": "202607311700"
     }
   }
 }
