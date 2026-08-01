@@ -1,14 +1,14 @@
 {
   "known_movies": [
     "Spider-Man: Brand New Day",
-    "Newton's 3rd Law",
     "Unmadham",
-    "Karmakhya",
-    "Srinivasa Mangapuram",
     "The Odyssey",
-    "Lenin",
     "Dhamaal 4",
-    "Chennai Love Story"
+    "Newton's 3rd Law",
+    "Srinivasa Mangapuram",
+    "Chennai Love Story",
+    "Karmakhya",
+    "Lenin"
   ],
   "known_sessions": {
     "254080": {
@@ -649,6 +649,24 @@
       "format": "2D Hindi",
       "attribute": " ",
       "datetime": "202608012245"
+    },
+    "253996": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "11:30 AM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202608071130"
+    },
+    "253997": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "02:25 PM",
+      "screen": "SCREEN 6",
+      "format": "3D English",
+      "attribute": "PCX SCREEN",
+      "datetime": "202608071425"
     }
   }
 }
