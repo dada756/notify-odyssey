@@ -1,0 +1,210 @@
+{
+  "known_movies": [
+    "Srinivasa Mangapuram",
+    "Chennai Love Story",
+    "Newton's 3rd Law",
+    "The Odyssey",
+    "Spider-Man: Brand New Day",
+    "Karmakhya"
+  ],
+  "known_sessions": {
+    "36175": {
+      "movie": "Chennai Love Story",
+      "date": "20260804",
+      "time": "10:05 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608041005"
+    },
+    "36181": {
+      "movie": "Chennai Love Story",
+      "date": "20260804",
+      "time": "01:05 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041305"
+    },
+    "36178": {
+      "movie": "Chennai Love Story",
+      "date": "20260804",
+      "time": "07:20 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041920"
+    },
+    "36184": {
+      "movie": "Chennai Love Story",
+      "date": "20260804",
+      "time": "10:20 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608042220"
+    },
+    "36170": {
+      "movie": "Newton's 3rd Law",
+      "date": "20260804",
+      "time": "10:10 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041010"
+    },
+    "36179": {
+      "movie": "Newton's 3rd Law",
+      "date": "20260804",
+      "time": "10:40 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608042240"
+    },
+    "36180": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "10:20 AM",
+      "screen": "SCREEN 5",
+      "format": "2D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041020"
+    },
+    "36176": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "01:25 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608041325"
+    },
+    "36172": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "04:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608041615"
+    },
+    "36168": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "07:50 PM",
+      "screen": "SCREEN 1",
+      "format": "2D English",
+      "attribute": "LASER DOLBY ATMOS",
+      "datetime": "202608041950"
+    },
+    "36169": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "10:45 PM",
+      "screen": "SCREEN 1",
+      "format": "2D English",
+      "attribute": "LASER DOLBY ATMOS",
+      "datetime": "202608042245"
+    },
+    "35256": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "10:40 AM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041040"
+    },
+    "35257": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "01:40 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041340"
+    },
+    "35258": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "04:30 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041630"
+    },
+    "35259": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "07:30 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041930"
+    },
+    "35260": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260804",
+      "time": "10:35 PM",
+      "screen": "SCREEN 3",
+      "format": "3D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608042235"
+    },
+    "36171": {
+      "movie": "The Odyssey",
+      "date": "20260804",
+      "time": "12:50 PM",
+      "screen": "SCREEN 4",
+      "format": "2D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041250"
+    },
+    "36177": {
+      "movie": "The Odyssey",
+      "date": "20260804",
+      "time": "04:05 PM",
+      "screen": "SCREEN 4",
+      "format": "2D English",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041605"
+    },
+    "36173": {
+      "movie": "The Odyssey",
+      "date": "20260804",
+      "time": "07:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608041900"
+    },
+    "36174": {
+      "movie": "The Odyssey",
+      "date": "20260804",
+      "time": "10:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608042215"
+    },
+    "36182": {
+      "movie": "Srinivasa Mangapuram",
+      "date": "20260804",
+      "time": "04:30 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041630"
+    },
+    "36183": {
+      "movie": "Karmakhya",
+      "date": "20260804",
+      "time": "07:40 PM",
+      "screen": "SCREEN 5",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608041940"
+    }
+  }
+}
