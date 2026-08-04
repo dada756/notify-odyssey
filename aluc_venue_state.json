@@ -1,1 +1,52 @@
-
+{
+  "known_movies": [
+    "Spider-Man: Brand New Day"
+  ],
+  "known_sessions": {
+    "3406": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "10:00 AM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608071000"
+    },
+    "3407": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "01:15 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608071315"
+    },
+    "3408": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "04:30 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608071630"
+    },
+    "3409": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "07:45 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608071945"
+    },
+    "3410": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "11:00 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608072300"
+    }
+  }
+}
