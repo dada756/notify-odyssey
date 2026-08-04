@@ -7,10 +7,13 @@ import subprocess
 from datetime import datetime
 
 # --- CONFIGURATION ---
-DATES = ["20260729", "20260730", "20260731", "20260801", "20260802"]
+DATES = ["20260807"]
 VENUE_CODE = "ALUC"
 STATE_FILE = "aluc_venue_state.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60)  # 5 hours 55 mins
+
+# >>> NEW: Target Movies for Notifications (Case-Insensitive) <<<
+TARGET_MOVIE_KEYWORDS = ["DC"]
 
 # Track WARP State natively
 USE_WARP = False
@@ -228,7 +231,6 @@ def fetch_venue_data():
                             s_time = show.get("ShowTime")
                             s_screen = show.get("ScreenName")
                             
-                            # Extract Attributes and ShowDateTime for precise sorting/formatting
                             s_attr = show.get("Attributes", "")
                             if not s_attr:
                                 s_attr = " "
@@ -256,7 +258,8 @@ def main():
     start_time = time.time()
     
     print("\n" + "="*70)
-    log("INFO", "🚀 STARTING ALLU CINEMAS DISCOVERY MONITOR (VERBOSE MODE)")
+    log("INFO", "🚀 STARTING ALLU CINEMAS DISCOVERY MONITOR (TARGETED MODE)")
+    log("INFO", f"🎯 Targeting Keywords: {TARGET_MOVIE_KEYWORDS}")
     print("="*70 + "\n")
 
     log("INIT", "Loading initial state...")
@@ -297,10 +300,22 @@ def main():
 
         log("LOGIC", f"Comparison complete. {len(new_movies_discovered)} new movies, {len(new_sessions_discovered)} new sessions.")
 
-        # 3. Alerting Logic
+        # 3. Alerting Logic (MODIFIED FOR TARGETED KEYWORDS)
         if not is_first_run:
+            
+            # --- 3A: Alert for completely new movies being listed ---
+            for new_movie in new_movies_discovered:
+                if any(keyword.lower() in new_movie.lower() for keyword in TARGET_MOVIE_KEYWORDS):
+                    msg = f"🎥 NEW TARGET MOVIE LISTED: '{new_movie}' is now visible at ALLU CINEMAS!"
+                    log("ALERT", f"🟢 DETECTED TARGET MOVIE: {new_movie}")
+                    trigger_ntfy(msg)
+                else:
+                    log("ALERT-DEBUG", f"Ignored new movie listing '{new_movie}' (Does not match targets).")
+
+            # --- 3B: Alert for new showtimes being added ---
             if new_sessions_discovered:
                 sessions_grouped = {}
+                
                 # Group by both Movie Title and Screen Attribute
                 for s_id, s_data in new_sessions_discovered.items():
                     group_key = (s_data["movie"], s_data["attribute"])
@@ -309,21 +324,26 @@ def main():
                     sessions_grouped[group_key].append(s_data)
                     
                 for (movie, attribute), sessions in sessions_grouped.items():
-                    # Sort chronologically by the raw datetime string
-                    sorted_sessions = sorted(sessions, key=lambda x: x.get("datetime", ""))
                     
-                    # Construct message
-                    msg = f"New Showtimes added for {movie} in {attribute} at ALLU CINEMAS\n\n"
-                    
-                    lines = []
-                    for s in sorted_sessions:
-                        # e.g., "29th July, 08:45 AM"
-                        lines.append(f"{humanize_date(s['date'])}, {s['time']}")
+                    # Target Verification
+                    if any(keyword.lower() in movie.lower() for keyword in TARGET_MOVIE_KEYWORDS):
+                        # Sort chronologically by the raw datetime string
+                        sorted_sessions = sorted(sessions, key=lambda x: x.get("datetime", ""))
                         
-                    msg += "\n".join(lines)
-                    
-                    log("ALERT", f"🟢 DETECTED {len(sessions)} NEW SHOWS FOR: {movie} ({attribute})")
-                    trigger_ntfy(msg)
+                        # Construct message
+                        msg = f"🎟️ New Showtimes added for {movie} in {attribute} at ALLU CINEMAS\n\n"
+                        
+                        lines = []
+                        for s in sorted_sessions:
+                            # e.g., "29th July, 08:45 AM"
+                            lines.append(f"{humanize_date(s['date'])}, {s['time']}")
+                            
+                        msg += "\n".join(lines)
+                        
+                        log("ALERT", f"🟢 DETECTED {len(sessions)} NEW SHOWS FOR TARGET: {movie} ({attribute})")
+                        trigger_ntfy(msg)
+                    else:
+                        log("ALERT-DEBUG", f"Ignored {len(sessions)} new showtimes for '{movie}' (Does not match targets).")
 
         # 4. Save to GitHub if state mutated
         if new_movies_discovered or new_sessions_discovered:
