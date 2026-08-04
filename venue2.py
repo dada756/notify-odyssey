@@ -306,7 +306,7 @@ def main():
             # --- 3A: Alert for completely new movies being listed ---
             for new_movie in new_movies_discovered:
                 if any(keyword.lower() in new_movie.lower() for keyword in TARGET_MOVIE_KEYWORDS):
-                    msg = f"🎥 NEW TARGET MOVIE LISTED: '{new_movie}' is now visible at ALLU CINEMAS!"
+                    msg = f"'{new_movie}' is now visible at ALLU CINEMAS!"
                     log("ALERT", f"🟢 DETECTED TARGET MOVIE: {new_movie}")
                     trigger_ntfy(msg)
                 else:
@@ -331,7 +331,7 @@ def main():
                         sorted_sessions = sorted(sessions, key=lambda x: x.get("datetime", ""))
                         
                         # Construct message
-                        msg = f"🎟️ New Showtimes added for {movie} in {attribute} at ALLU CINEMAS\n\n"
+                        msg = f"New Showtimes added for {movie} in {attribute} at ALLU CINEMAS\n\n"
                         
                         lines = []
                         for s in sorted_sessions:
