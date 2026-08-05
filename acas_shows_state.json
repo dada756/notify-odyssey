@@ -361,6 +361,24 @@
       "format": "2D Telugu",
       "attribute": "LASER DOLBY DIGITAL 7.1",
       "datetime": "202608071935"
+    },
+    "36220": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "01:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608071300"
+    },
+    "36221": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "07:10 PM",
+      "screen": "SCREEN 2",
+      "format": "2D English",
+      "attribute": "LED SCREEN DOLBY ATMOS",
+      "datetime": "202608071910"
     }
   }
 }
