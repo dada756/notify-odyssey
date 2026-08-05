@@ -1,13 +1,14 @@
 {
   "known_movies": [
-    "DC",
-    "Newton's 3rd Law",
-    "Chennai Love Story",
-    "Karmakhya",
-    "The Odyssey",
     "Srinivasa Mangapuram",
+    "Newton's 3rd Law",
+    "Karmakhya",
+    "DC",
+    "Chennai Love Story",
+    "Spider-Man: Brand New Day",
+    "The Odyssey",
     "Korean Kanakaraju",
-    "Spider-Man: Brand New Day"
+    "GDN"
   ],
   "known_sessions": {
     "36175": {
@@ -342,6 +343,24 @@
       "format": "2D Telugu",
       "attribute": "LASER DOLBY DIGITAL 7.1",
       "datetime": "202608072220"
+    },
+    "36224": {
+      "movie": "GDN",
+      "date": "20260807",
+      "time": "10:25 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608071025"
+    },
+    "36225": {
+      "movie": "GDN",
+      "date": "20260807",
+      "time": "07:35 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608071935"
     }
   }
 }
