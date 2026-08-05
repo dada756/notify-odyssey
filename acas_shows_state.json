@@ -7,6 +7,7 @@
     "Spider-Man: Brand New Day",
     "Newton's 3rd Law",
     "DC",
+    "Yamudu",
     "Korean Kanakaraju",
     "Chennai Love Story"
   ],
@@ -388,6 +389,15 @@
       "format": "2D Telugu",
       "attribute": "LED SCREEN DOLBY ATMOS",
       "datetime": "202608071615"
+    },
+    "36233": {
+      "movie": "Yamudu",
+      "date": "20260807",
+      "time": "01:20 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608071320"
     }
   }
 }
