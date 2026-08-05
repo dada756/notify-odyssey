@@ -1,5 +1,8 @@
 {
   "known_movies": [
+    "DC",
+    "The Odyssey",
+    "Korean Kanakaraju",
     "Spider-Man: Brand New Day"
   ],
   "known_sessions": {
@@ -47,6 +50,96 @@
       "format": "DOLBY CINEMA 3D English",
       "attribute": "DOLBY CINEMA",
       "datetime": "202608072300"
+    },
+    "3637": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "10:00 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071000"
+    },
+    "3638": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "01:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071320"
+    },
+    "3639": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "04:40 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071640"
+    },
+    "3640": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "08:00 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608072000"
+    },
+    "3641": {
+      "movie": "The Odyssey",
+      "date": "20260807",
+      "time": "11:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608072320"
+    },
+    "3642": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260807",
+      "time": "10:35 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071035"
+    },
+    "3643": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260807",
+      "time": "01:45 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071345"
+    },
+    "3645": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260807",
+      "time": "08:05 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608072005"
+    },
+    "3644": {
+      "movie": "DC",
+      "date": "20260807",
+      "time": "05:00 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071700"
+    },
+    "3636": {
+      "movie": "DC",
+      "date": "20260807",
+      "time": "10:35 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608072235"
     }
   }
 }
