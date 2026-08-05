@@ -1,15 +1,15 @@
 {
   "known_movies": [
-    "GDN",
+    "Chennai Love Story",
     "Srinivasa Mangapuram",
-    "Karmakhya",
-    "The Odyssey",
-    "Spider-Man: Brand New Day",
+    "Yamudu",
     "Newton's 3rd Law",
     "DC",
-    "Yamudu",
+    "The Odyssey",
+    "Spider-Man: Brand New Day",
     "Korean Kanakaraju",
-    "Chennai Love Story"
+    "GDN",
+    "Karmakhya"
   ],
   "known_sessions": {
     "36175": {
@@ -398,6 +398,15 @@
       "format": "2D Telugu",
       "attribute": "LASER DOLBY DIGITAL 7.1",
       "datetime": "202608071320"
+    },
+    "36310": {
+      "movie": "DC",
+      "date": "20260807",
+      "time": "04:30 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Tamil",
+      "attribute": "LASER DOLBY DIGITAL 7.1",
+      "datetime": "202608071630"
     }
   }
 }
