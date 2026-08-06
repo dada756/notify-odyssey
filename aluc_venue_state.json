@@ -1,9 +1,9 @@
 {
   "known_movies": [
     "Spider-Man: Brand New Day",
+    "The Odyssey",
     "Korean Kanakaraju",
-    "DC",
-    "The Odyssey"
+    "DC"
   ],
   "known_sessions": {
     "3406": {
@@ -140,6 +140,42 @@
       "format": "2D Telugu",
       "attribute": "BARCO LASER 4K ATMOS",
       "datetime": "202608072235"
+    },
+    "3634": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "01:10 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071310"
+    },
+    "3635": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260807",
+      "time": "07:40 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071940"
+    },
+    "3632": {
+      "movie": "DC",
+      "date": "20260807",
+      "time": "10:20 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608071020"
+    },
+    "3646": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260807",
+      "time": "11:15 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608072315"
     }
   }
 }
