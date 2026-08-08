@@ -1,9 +1,9 @@
 {
   "known_movies": [
     "Spider-Man: Brand New Day",
-    "The Odyssey",
+    "DC",
     "Korean Kanakaraju",
-    "DC"
+    "The Odyssey"
   ],
   "known_sessions": {
     "3406": {
@@ -176,6 +176,186 @@
       "format": "2D Telugu",
       "attribute": "BARCO LASER 4K ATMOS",
       "datetime": "202608072315"
+    },
+    "3411": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "10:00 AM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608081000"
+    },
+    "3412": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "01:15 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608081315"
+    },
+    "3413": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "04:30 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608081630"
+    },
+    "3414": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "07:45 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608081945"
+    },
+    "3415": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "11:00 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D English",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202608082300"
+    },
+    "3626": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "01:10 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081310"
+    },
+    "3627": {
+      "movie": "Spider-Man: Brand New Day",
+      "date": "20260808",
+      "time": "07:40 PM",
+      "screen": "SCREEN 2",
+      "format": "3D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081940"
+    },
+    "3618": {
+      "movie": "The Odyssey",
+      "date": "20260808",
+      "time": "10:00 AM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081000"
+    },
+    "3619": {
+      "movie": "The Odyssey",
+      "date": "20260808",
+      "time": "01:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081320"
+    },
+    "3615": {
+      "movie": "The Odyssey",
+      "date": "20260808",
+      "time": "04:40 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081640"
+    },
+    "3621": {
+      "movie": "The Odyssey",
+      "date": "20260808",
+      "time": "08:00 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608082000"
+    },
+    "3617": {
+      "movie": "The Odyssey",
+      "date": "20260808",
+      "time": "11:20 PM",
+      "screen": "SCREEN 3",
+      "format": "2D English",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608082320"
+    },
+    "3629": {
+      "movie": "DC",
+      "date": "20260808",
+      "time": "10:20 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081020"
+    },
+    "3630": {
+      "movie": "DC",
+      "date": "20260808",
+      "time": "05:00 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081700"
+    },
+    "3631": {
+      "movie": "DC",
+      "date": "20260808",
+      "time": "10:35 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608082235"
+    },
+    "3622": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260808",
+      "time": "10:35 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081035"
+    },
+    "3623": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260808",
+      "time": "01:45 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081345"
+    },
+    "3667": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260808",
+      "time": "04:05 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608081605"
+    },
+    "3624": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260808",
+      "time": "08:05 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608082005"
+    },
+    "3625": {
+      "movie": "Korean Kanakaraju",
+      "date": "20260808",
+      "time": "11:15 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202608082315"
     }
   }
 }
