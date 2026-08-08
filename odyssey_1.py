@@ -198,6 +198,8 @@ def find_target_session():
         if not resp or resp.status_code != 200: 
             continue
             
+        fallback_logged = False # <--- ADD THIS FLAG HERE
+            
         try:
             data = resp.json()
             show_details_list = data.get("ShowDetails", [])
@@ -211,6 +213,15 @@ def find_target_session():
                         current_event_code = child.get("EventCode", parent_code)
                         
                         for show in child.get("ShowTimes", []):
+                            # --- NEW: Constraint Check 0: Strict Date Verification ---
+                            s_date_code = show.get("ShowDateCode", "")
+                            if s_date_code != date_code:
+                                if not fallback_logged:
+                                    logger.info(f"    -> ⚠️ API fallback detected! Requested {date_code} but received {s_date_code}. Ignoring fallback shows.")
+                                    fallback_logged = True
+                                continue
+                            # ---------------------------------------------------------
+                            
                             s_attr = show.get("Attributes", "")
                             
                             # 1. Constraint Check: Screen Attribute
