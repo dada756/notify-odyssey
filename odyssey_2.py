@@ -485,7 +485,7 @@ def main():
             
             if not target_session:
                 logger.info("    -> ⏳ No matching showtimes exist yet. Sleeping 23 seconds...")
-                time.sleep(23)
+                time.sleep(24)
                 cycle_count += 1
                 continue
             else:
