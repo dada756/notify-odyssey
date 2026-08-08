@@ -17,7 +17,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-DATES = ["20260811"]
+DATES = ["20260814"]
 VENUE_CODE = "PRHN"
 TARGET_TICKET_CATEGORY = "0009" # Hardcoded ticket category applies to all seats here
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
@@ -35,7 +35,7 @@ TOPIC = os.environ.get("NTFY_TOPIC")
 
 # Define your desired seats here. 
 DESIRED_SEATS = {
-    "G": ["1", "47"]
+    "I": ["23", "24", "25"]
 }
 
 # Track WARP State natively
@@ -51,7 +51,7 @@ GET_HEADERS = {
     "X-Latitude": "17.385044",
     "X-Subregion-Code": "HYD",
     "X-App-Code": "MOBAND2",
-    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; Android SDK built for x86_64 Build/QSR1.211112.011)",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 8.0.0; ATU-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36",
     "X-App-Version": "18.2.3",
     "Accept-Encoding": "gzip, deflate",
     "Connection": "keep-alive"
@@ -63,7 +63,7 @@ POST_HEADERS = {
     "X-Latitude": "17.385044",
     "X-Subregion-Code": "HYD",
     "X-App-Code": "MOBAND2",
-    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; Android SDK built for x86_64 Build/QSR1.211112.011)",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 8.0.0; ATU-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36",
     "X-App-Version": "18.2.3",
     "Content-Type": "application/x-www-form-urlencoded",
     "Accept-Encoding": "gzip, deflate"
