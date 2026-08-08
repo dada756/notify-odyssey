@@ -58,8 +58,8 @@ GET_HEADERS = {
     "X-Latitude": "17.385044",
     "X-Subregion-Code": "HYD",
     "X-App-Code": "MOBAND2",
-    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; Android SDK built for x86_64 Build/QSR1.211112.011)",
-    "X-App-Version": "18.2.3",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2110.1046 Mobile Safari/537.36",
+    "X-App-Version": "18.2.1",
     "Accept-Encoding": "gzip, deflate",
     "Connection": "keep-alive"
 }
@@ -70,8 +70,8 @@ POST_HEADERS = {
     "X-Latitude": "17.385044",
     "X-Subregion-Code": "HYD",
     "X-App-Code": "MOBAND2",
-    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 10; Android SDK built for x86_64 Build/QSR1.211112.011)",
-    "X-App-Version": "18.2.3",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2110.1046 Mobile Safari/537.36",
+    "X-App-Version": "18.2.1",
     "Content-Type": "application/x-www-form-urlencoded",
     "Accept-Encoding": "gzip, deflate"
 }
