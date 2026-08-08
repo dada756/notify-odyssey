@@ -1,4 +1,4 @@
-name: future
+name: future 1
 
 on:
   workflow_dispatch:
