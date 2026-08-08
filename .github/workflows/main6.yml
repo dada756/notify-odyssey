@@ -59,4 +59,5 @@ jobs:
         env:
           BMS_EMAIL: ${{ secrets.BMS_EMAIL }}
           BMS_PHONE: ${{ secrets.BMS_PHONE }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python -u odyssey_1.py
