@@ -132,7 +132,7 @@ def trigger_ntfy(message, attach_url=None):
         
     for i in range(1):
         try:
-            resp = requests.post("https://ntfy.sh/dolby_unblock", data=message.encode('utf-8'), headers=headers, timeout=10)
+            resp = requests.post(f"https://ntfy.sh/{TOPIC}", data=message.encode('utf-8'), headers=headers, timeout=10)
             if resp.status_code == 200:
                 logger.info(f"✅ Ntfy ping sent! Status: {resp.status_code}")
         except Exception as e:
