@@ -7,7 +7,7 @@ import subprocess
 from datetime import datetime
 
 # --- CONFIGURATION ---
-DATES = ["20260807"]
+DATES = ["20260814"]
 VENUE_CODE = "ALUC"
 STATE_FILE = "aluc_venue_state.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60)  # 5 hours 55 mins
