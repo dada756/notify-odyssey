@@ -17,7 +17,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-DATES = ["20260814"]
+DATES = ["20260815"]
 VENUE_CODE = "PRHN"
 TARGET_TICKET_CATEGORY = "0009" # Hardcoded ticket category applies to all seats here
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
