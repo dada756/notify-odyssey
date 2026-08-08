@@ -17,7 +17,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-DATES = ["20260813"]
+DATES = ["20260814"]
 VENUE_CODE = "ALUC"
 STATE_FILE = "sniped_state_1.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
@@ -41,7 +41,7 @@ PHONE = os.environ.get("BMS_PHONE")
 TOPIC = os.environ.get("NTFY_TOPIC")
 
 DESIRED_SEATS = {
-    "K": ["11", "10", "09", "08"],
+    "K": ["11", "10", "09"],
     "H": ["03", "02"]
 }
 
