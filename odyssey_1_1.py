@@ -17,15 +17,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
-DATES = ["20260814"]
+DATES = ["20260812"]
 VENUE_CODE = "ALUC"
-STATE_FILE = "sniped_state_1.json"
+STATE_FILE = "sniped_state_1_1.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60) # 5 hours 55 mins
 
 # --- NEW: SHOWTIME CONSTRAINTS ---
 TARGET_ATTRIBUTE = "DOLBY CINEMA"
-TARGET_TIME_START = "12:00 PM"
-TARGET_TIME_END = "03:00 PM"
+TARGET_TIME_START = "03:00 PM"
+TARGET_TIME_END = "05:00 PM"
 
 # --- PLAN A: ROW TO TICKET CATEGORY MAP ---
 ROW_CATEGORY_MAP = {
@@ -40,8 +40,7 @@ EMAIL = os.environ.get("BMS_EMAIL")
 PHONE = os.environ.get("BMS_PHONE")
 
 DESIRED_SEATS = {
-    "K": ["17", "18", "19", "20"],
-    "H": ["19", "18"]
+    "J": ["14", "15", "16", "17"]
 }
 
 # Track WARP State natively
