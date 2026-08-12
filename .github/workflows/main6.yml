@@ -60,4 +60,4 @@ jobs:
           BMS_EMAIL: ${{ secrets.BMS_EMAIL }}
           BMS_PHONE: ${{ secrets.BMS_PHONE }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python -u all_shows_1.py
+        run: python -u all_shows.py
