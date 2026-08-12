@@ -166,7 +166,7 @@ def toggle_warp():
         USE_WARP = True
         last_warp_toggle = time.time()
 
-def make_bms_request(method, url, max_retries=3, **kwargs):
+def make_bms_request(method, url, max_retries=25, **kwargs):
     for attempt in range(1, max_retries + 1):
         current_proxies = PROXIES if USE_WARP else None
         try:
