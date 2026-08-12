@@ -44,7 +44,7 @@ PHONE = os.environ.get("BMS_PHONE")
 TOPIC = os.environ.get("NTFY_TOPIC")
 
 DESIRED_SEATS = {
-    "B": ["22", "23", "24"]
+    "B": ["26"]
 }
 
 # Track WARP State natively (Thread-Safe)
