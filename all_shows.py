@@ -7,6 +7,8 @@ import re
 import subprocess
 import random
 import threading
+import sys
+import signal
 import logging
 from datetime import datetime
 
@@ -46,8 +48,11 @@ DESIRED_SEATS = {
     "H": ["03", "02"]
 }
 
-# Track WARP State natively
+# Track WARP State natively (Thread-Safe)
 USE_WARP = False
+warp_lock = threading.Lock()
+last_warp_toggle = 0
+
 PROXIES = {
     "http": "socks5://127.0.0.1:40000",
     "https": "socks5://127.0.0.1:40000"
@@ -146,16 +151,20 @@ def trigger_ntfy(message, attach_url=None):
             logger.error(f"❌ Ntfy ping failed: {e}")
 
 def toggle_warp():
-    global USE_WARP
-    if USE_WARP:
-        logger.info("    -> 🔌 Disconnecting Cloudflare WARP...")
+    global USE_WARP, last_warp_toggle
+    with warp_lock:
+        # If another thread already restarted WARP in the last 10 seconds, do nothing and return
+        if time.time() - last_warp_toggle < 10:
+            return 
+            
+        logger.info("    -> 🔌 Restarting Cloudflare WARP to bypass WAF block...")
         subprocess.run(["warp-cli", "--accept-tos", "disconnect"], capture_output=True, check=False)
-        USE_WARP = False
-    else:
-        logger.info("    -> 🛡️ Connecting Cloudflare WARP to bypass blocks...")
+        time.sleep(2)
         subprocess.run(["warp-cli", "--accept-tos", "connect"], capture_output=True, check=False)
         time.sleep(5)
+        
         USE_WARP = True
+        last_warp_toggle = time.time()
 
 def make_bms_request(method, url, max_retries=3, **kwargs):
     for attempt in range(1, max_retries + 1):
@@ -189,7 +198,7 @@ def find_target_session():
         target_time_end_obj = datetime.strptime(TARGET_TIME_END, "%I:%M %p").time()
     except Exception as e:
         logger.error(f"❌ Time parsing error in config (TARGET_TIME_START/END). Error: {e}")
-        return None
+        return []
 
     valid_shows = []
     
@@ -199,7 +208,7 @@ def find_target_session():
         if not resp or resp.status_code != 200: 
             continue
             
-        fallback_logged = False # <--- ADD THIS FLAG HERE
+        fallback_logged = False
             
         try:
             data = resp.json()
@@ -221,7 +230,6 @@ def find_target_session():
                                     logger.info(f"    -> ⚠️ API fallback detected! Requested {date_code} but received {s_date_code}. Ignoring fallback shows.")
                                     fallback_logged = True
                                 continue
-                            # ---------------------------------------------------------
                             
                             s_attr = show.get("Attributes", "")
                             
@@ -239,7 +247,7 @@ def find_target_session():
                             if target_time_start_obj <= s_time_obj <= target_time_end_obj:
                                 valid_shows.append({
                                     "sessionId": show.get("SessionId"),
-                                    "eventCode": current_event_code,   # <-- ADDED DYNAMIC EVENT CODE
+                                    "eventCode": current_event_code,
                                     "dateCode": show.get("ShowDateCode"),
                                     "time": s_time_str,
                                     "attribute": s_attr,
@@ -257,7 +265,7 @@ def find_target_session():
     return []
 
 # =======================================================
-# PHASE 2: LAYOUT PARSING
+# PHASE 2 & 3: THREAD WORKER / LAYOUT PARSING
 # =======================================================
 def fetch_seat_layout(session_id):
     url = "https://services-in.bookmyshow.com/doTrans.aspx"
@@ -269,43 +277,6 @@ def fetch_seat_layout(session_id):
         return resp.json().get("BookMyShow", {}).get("strData", "")
     except Exception: 
         return ""
-
-def monitor_and_snipe_worker(session, sniped_memory, state_lock, start_time):
-    s_id = session["sessionId"]
-    logger.info(f"    -> [THREAD] 🚀 Started monitoring Session {s_id} ({session['time']})")
-    
-    while (time.time() - start_time) < MAX_RUNTIME_SECONDS:
-        str_data = fetch_seat_layout(s_id)
-        if not str_data:
-            time.sleep(1) # 1-second delay for failed/empty layout fetches
-            continue
-            
-        current_seats, categories_map, seat_metadata, total_available = parse_layout(str_data)
-        
-        for target_row, target_seat_list in DESIRED_SEATS.items():
-            if target_row not in current_seats:
-                continue
-                
-            available_in_row = current_seats[target_row]
-            
-            for target_seat in target_seat_list:
-                seat_memory_key = f"{s_id}_{target_row}_{target_seat}"
-                
-                # Check in-memory state before sniping
-                with state_lock:
-                    already_sniped = seat_memory_key in sniped_memory
-                
-                if target_seat in available_in_row and not already_sniped:
-                    meta = seat_metadata.get(f"{target_row}_{target_seat}")
-                    success = execute_snipe(session, target_row, target_seat, meta, categories_map)
-                    
-                    if success:
-                        with state_lock:
-                            sniped_memory.add(seat_memory_key)
-                        logger.info(f"✅ Successfully sniped and memorized: {seat_memory_key}")
-                        time.sleep(1) # Inherited 1-sec delay after successful lock request
-                        
-        time.sleep(1) # Aggressive 1-second delay before checking the layout again
 
 def parse_layout(str_data):
     if not str_data: return {}, {}, {}, 0
@@ -352,8 +323,60 @@ def parse_layout(str_data):
     total_available_seats = sum(len(seats) for seats in available_seats_by_row.values())
     return available_seats_by_row, categories, seat_metadata, total_available_seats
 
+def monitor_and_snipe_worker(session, sniped_memory, state_lock, start_time):
+    s_id = session["sessionId"]
+    logger.info(f"    -> [THREAD] 🚀 Started monitoring Session {s_id} ({session['time']})")
+    
+    # Calculate the total number of target seats for a single session
+    total_desired_seats = sum(len(seats) for seats in DESIRED_SEATS.values())
+    
+    while (time.time() - start_time) < MAX_RUNTIME_SECONDS:
+        # --- NEW: EARLY EXIT CHECK ---
+        sniped_count = 0
+        with state_lock:
+            for target_row, target_seat_list in DESIRED_SEATS.items():
+                for target_seat in target_seat_list:
+                    if f"{s_id}_{target_row}_{target_seat}" in sniped_memory:
+                        sniped_count += 1
+                        
+        if sniped_count >= total_desired_seats:
+            logger.info(f"    -> [THREAD] 🎯 All target seats sniped for Session {s_id}! Thread exiting.")
+            break
+        # -----------------------------
+
+        str_data = fetch_seat_layout(s_id)
+        if not str_data:
+            time.sleep(1)
+            continue
+            
+        current_seats, categories_map, seat_metadata, total_available = parse_layout(str_data)
+        
+        for target_row, target_seat_list in DESIRED_SEATS.items():
+            if target_row not in current_seats:
+                continue
+                
+            available_in_row = current_seats[target_row]
+            
+            for target_seat in target_seat_list:
+                seat_memory_key = f"{s_id}_{target_row}_{target_seat}"
+                
+                with state_lock:
+                    already_sniped = seat_memory_key in sniped_memory
+                
+                if target_seat in available_in_row and not already_sniped:
+                    meta = seat_metadata.get(f"{target_row}_{target_seat}")
+                    success = execute_snipe(session, target_row, target_seat, meta, categories_map)
+                    
+                    if success:
+                        with state_lock:
+                            sniped_memory.add(seat_memory_key)
+                        logger.info(f"✅ Successfully sniped and memorized: {seat_memory_key}")
+                        time.sleep(1)
+                        
+        time.sleep(1)
+
 # =======================================================
-# PHASE 3: AUTO-LOCK / PAYMENT SNIPER 
+# PHASE 3 (cont): AUTO-LOCK / PAYMENT SNIPER 
 # =======================================================
 def lock_seat(session_id, row_index, backend_seat, cat_code, area_id, ticket_category, event_code):
     logger.info(f"    -> 🔒 [SNIPER] Request 1: Attempting to lock internal Row {row_index} Seat {backend_seat} ({cat_code})...")
@@ -363,7 +386,7 @@ def lock_seat(session_id, row_index, backend_seat, cat_code, area_id, ticket_cat
         "appCode": "MOBAND2",
         "venueCode": VENUE_CODE,
         "sessionId": str(session_id),
-        "ticketCategory": ticket_category, # INJECTED DYNAMICALLY (PLAN A)
+        "ticketCategory": ticket_category, 
         "numberOfTickets": "1",
         "selectedSeats": f"|1|{cat_code}|{area_id}|{row_index}|{backend_seat}|",
         "email": EMAIL,
@@ -481,12 +504,10 @@ def execute_snipe(session, row, seat_num, meta, categories):
     
     c_code, a_id = cat_info["cat_code"], cat_info["area_id"]
     
-    # PLAN A: Fetch the exact ticket category for this specific row (default to 0008 if not found)
     ticket_category = ROW_CATEGORY_MAP.get(row, "0008")
     
     logger.info(f"    -> 🎯 [SNIPER] MATCH FOUND! Auto-locking Row {row}, Seat {seat_num} (Internal Cat: {c_code}, Area: {a_id}, Ticket Cat: {ticket_category})")
     
-    # 1. Lock 
     # 1. Lock 
     t_id, t_uid = lock_seat(session["sessionId"], meta["row_index"], meta["backend_seat"], c_code, a_id, ticket_category, session["eventCode"])
     if not t_id: return False
@@ -506,8 +527,13 @@ def execute_snipe(session, row, seat_num, meta, categories):
 # =======================================================
 # MAIN LOOP STATE MACHINE
 # =======================================================
+def gha_sigterm_handler(signum, frame):
+    logger.warning("\n⚠️ SIGTERM received (GitHub Actions cancellation). Forcing early shutdown...")
+    sys.exit(0) # Triggers the 'finally' block
+
 def main():
     start_time = time.time()
+    signal.signal(signal.SIGTERM, gha_sigterm_handler)
     
     logger.info("==================================================")
     logger.info("🚀 STARTING TARGETED SEAT SNIPER (MULTI-THREADED)")
@@ -523,7 +549,7 @@ def main():
     logger.info("    -> [PHASE 1] Scanning Venue API for target showtimes...")
     
     while (time.time() - start_time) < MAX_RUNTIME_SECONDS:
-        target_sessions = find_target_session() # Now returns a list
+        target_sessions = find_target_session()
         
         if not target_sessions:
             logger.info("    -> ⏳ No matching showtimes exist yet. Sleeping 23 seconds...")
@@ -540,7 +566,12 @@ def main():
     global USE_WARP
     if not USE_WARP:
         logger.info("    -> 🛡️ Pre-warming WARP Proxy before spawning threads...")
-        toggle_warp()
+        with warp_lock:
+            subprocess.run(["warp-cli", "--accept-tos", "connect"], capture_output=True, check=False)
+            time.sleep(5)
+            USE_WARP = True
+            global last_warp_toggle
+            last_warp_toggle = time.time()
         
     # --- PHASE 2 & 3: Parallel Threading ---
     logger.info(f"    -> 🚀 Spawning {len(target_sessions)} parallel threads...")
@@ -554,14 +585,16 @@ def main():
         t.start()
         threads.append(t)
 
-    # Block main thread until max runtime is reached or threads somehow crash out
-    for t in threads:
-        t.join()
-
-    # --- PHASE 4: Deferred Cleanup & Git Commit ---
-    logger.info("🏁 Threads finished or max runtime reached. Executing deferred state commit.")
-    save_state(sniped_seats_memory)
-    logger.info("🏁 Script shutting down gracefully.")
+    # Block main thread, waiting for all threads to finish their assigned tasks
+    try:
+        for t in threads:
+            while t.is_alive():
+                t.join(1) # Check thread status every 1 second
+    finally:
+        # --- PHASE 4: Deferred Cleanup & Git Commit ---
+        logger.info("\n🏁 Executing deferred state commit to Git...")
+        save_state(sniped_seats_memory)
+        logger.info("🏁 Script shutting down gracefully.")
         
 if __name__ == "__main__":
     main()
