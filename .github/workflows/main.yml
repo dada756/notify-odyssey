@@ -1,4 +1,4 @@
-name: odyssey allu first day
+name: aluc unb 2
 
 on:
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           
       - name: Install Python Dependencies
         run: pip install requests curl-cffi
@@ -55,5 +55,20 @@ jobs:
           # Test the proxy to ensure it's routing through Cloudflare
           curl -x socks5://127.0.0.1:40000 https://1.1.1.1/cdn-cgi/trace | grep warp || echo "WARP Test Failed, but continuing..."
 
-      - name: Run Polling Script
-        run: python -u unblock_1.py
+      - name: Fetch and Run Polling Script
+        env:
+          BMS_EMAIL: '${{ secrets.BMS_EMAIL }}'
+          BMS_PHONE: '${{ secrets.BMS_PHONE }}'
+          NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
+          PROXY_LIST: '${{ secrets.PROXY_LIST }}'
+          # Add the new secrets to the environment
+          WORKER_URL: '${{ secrets.WORKER_URL }}'
+          WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
+        run: |
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/aluc_unb_2.py" -o aluc_unb_2.py
+          
+          python -u aluc_unb_2.py
+          
+      - name: Secure Cleanup
+        if: always() # Ensures the file is deleted even if the python script above crashes
+        run: rm -f aluc_unb_2.py
