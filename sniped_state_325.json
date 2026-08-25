@@ -1,135 +1,9 @@
 {
-  "completed_waves": 2,
-  "last_wave_finish_timestamp": 1787648396.042683,
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 0,
   "available_seats": {
-    "254894_I_26": {
-      "session_id": "254894",
-      "row": "I",
-      "seat_num": "26",
-      "meta": {
-        "block_code": "A",
-        "row_index": "6",
-        "backend_seat": "0122"
-      },
-      "c_code": "0000000003",
-      "a_id": "1",
-      "ticket_category": "0006",
-      "event_code": "ET00379307",
-      "event_title": "Toxic: A Fairy Tale for Grown-ups",
-      "event_language": "Telugu",
-      "event_dimension": "2D",
-      "date_code": "20260826",
-      "time": "02:25 PM",
-      "screen": "SCREEN 6",
-      "attribute": "PCX SCREEN"
-    },
-    "254894_K_26": {
-      "session_id": "254894",
-      "row": "K",
-      "seat_num": "26",
-      "meta": {
-        "block_code": "A",
-        "row_index": "4",
-        "backend_seat": "0122"
-      },
-      "c_code": "0000000003",
-      "a_id": "1",
-      "ticket_category": "0006",
-      "event_code": "ET00379307",
-      "event_title": "Toxic: A Fairy Tale for Grown-ups",
-      "event_language": "Telugu",
-      "event_dimension": "2D",
-      "date_code": "20260826",
-      "time": "02:25 PM",
-      "screen": "SCREEN 6",
-      "attribute": "PCX SCREEN"
-    },
-    "254894_K_27": {
-      "session_id": "254894",
-      "row": "K",
-      "seat_num": "27",
-      "meta": {
-        "block_code": "A",
-        "row_index": "4",
-        "backend_seat": "0121"
-      },
-      "c_code": "0000000003",
-      "a_id": "1",
-      "ticket_category": "0006",
-      "event_code": "ET00379307",
-      "event_title": "Toxic: A Fairy Tale for Grown-ups",
-      "event_language": "Telugu",
-      "event_dimension": "2D",
-      "date_code": "20260826",
-      "time": "02:25 PM",
-      "screen": "SCREEN 6",
-      "attribute": "PCX SCREEN"
-    },
-    "254894_F_22": {
-      "session_id": "254894",
-      "row": "F",
-      "seat_num": "22",
-      "meta": {
-        "block_code": "A",
-        "row_index": "9",
-        "backend_seat": "0126"
-      },
-      "c_code": "0000000003",
-      "a_id": "1",
-      "ticket_category": "0006",
-      "event_code": "ET00379307",
-      "event_title": "Toxic: A Fairy Tale for Grown-ups",
-      "event_language": "Telugu",
-      "event_dimension": "2D",
-      "date_code": "20260826",
-      "time": "02:25 PM",
-      "screen": "SCREEN 6",
-      "attribute": "PCX SCREEN"
-    },
-    "254894_F_23": {
-      "session_id": "254894",
-      "row": "F",
-      "seat_num": "23",
-      "meta": {
-        "block_code": "A",
-        "row_index": "9",
-        "backend_seat": "0125"
-      },
-      "c_code": "0000000003",
-      "a_id": "1",
-      "ticket_category": "0006",
-      "event_code": "ET00379307",
-      "event_title": "Toxic: A Fairy Tale for Grown-ups",
-      "event_language": "Telugu",
-      "event_dimension": "2D",
-      "date_code": "20260826",
-      "time": "02:25 PM",
-      "screen": "SCREEN 6",
-      "attribute": "PCX SCREEN"
-    },
-    "254894_F_26": {
-      "session_id": "254894",
-      "row": "F",
-      "seat_num": "26",
-      "meta": {
-        "block_code": "A",
-        "row_index": "9",
-        "backend_seat": "0122"
-      },
-      "c_code": "0000000003",
-      "a_id": "1",
-      "ticket_category": "0006",
-      "event_code": "ET00379307",
-      "event_title": "Toxic: A Fairy Tale for Grown-ups",
-      "event_language": "Telugu",
-      "event_dimension": "2D",
-      "date_code": "20260826",
-      "time": "02:25 PM",
-      "screen": "SCREEN 6",
-      "attribute": "PCX SCREEN"
-    },
-    "254894_F_27": {
-      "session_id": "254894",
+    "254895_F_27": {
+      "session_id": "254895",
       "row": "F",
       "seat_num": "27",
       "meta": {
@@ -145,18 +19,18 @@
       "event_language": "Telugu",
       "event_dimension": "2D",
       "date_code": "20260826",
-      "time": "02:25 PM",
+      "time": "06:20 PM",
       "screen": "SCREEN 6",
       "attribute": "PCX SCREEN"
     },
-    "254894_G_22": {
-      "session_id": "254894",
-      "row": "G",
-      "seat_num": "22",
+    "254896_F_25": {
+      "session_id": "254896",
+      "row": "F",
+      "seat_num": "25",
       "meta": {
         "block_code": "A",
-        "row_index": "8",
-        "backend_seat": "0126"
+        "row_index": "9",
+        "backend_seat": "0123"
       },
       "c_code": "0000000003",
       "a_id": "1",
@@ -166,7 +40,28 @@
       "event_language": "Telugu",
       "event_dimension": "2D",
       "date_code": "20260826",
-      "time": "02:25 PM",
+      "time": "10:15 PM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX SCREEN"
+    },
+    "254896_F_26": {
+      "session_id": "254896",
+      "row": "F",
+      "seat_num": "26",
+      "meta": {
+        "block_code": "A",
+        "row_index": "9",
+        "backend_seat": "0122"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00379307",
+      "event_title": "Toxic: A Fairy Tale for Grown-ups",
+      "event_language": "Telugu",
+      "event_dimension": "2D",
+      "date_code": "20260826",
+      "time": "10:15 PM",
       "screen": "SCREEN 6",
       "attribute": "PCX SCREEN"
     }
