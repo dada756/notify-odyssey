@@ -1,4 +1,4 @@
-name: suda 1
+name: suda monitor
 
 on:
   workflow_dispatch:
