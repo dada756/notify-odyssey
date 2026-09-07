@@ -1,0 +1,121 @@
+{
+  "known_movies": [
+    "Romanchakam",
+    "I'm Game",
+    "Hanuman Ansh",
+    "Bethlehem Kudumba Unit",
+    "Irumudi",
+    "Vishwanath and Sons",
+    "Mirzapur: The Movie"
+  ],
+  "known_sessions": {
+    "4681": {
+      "movie": "Irumudi",
+      "date": "20260907",
+      "time": "01:25 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071325"
+    },
+    "4673": {
+      "movie": "Irumudi",
+      "date": "20260907",
+      "time": "08:05 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609072005"
+    },
+    "4705": {
+      "movie": "Irumudi",
+      "date": "20260907",
+      "time": "11:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609072315"
+    },
+    "4671": {
+      "movie": "Hanuman Ansh",
+      "date": "20260907",
+      "time": "01:45 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071345"
+    },
+    "4677": {
+      "movie": "Hanuman Ansh",
+      "date": "20260907",
+      "time": "07:30 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071930"
+    },
+    "4666": {
+      "movie": "Romanchakam",
+      "date": "20260907",
+      "time": "02:10 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071410"
+    },
+    "4675": {
+      "movie": "Vishwanath and Sons",
+      "date": "20260907",
+      "time": "04:20 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071620"
+    },
+    "4672": {
+      "movie": "I'm Game",
+      "date": "20260907",
+      "time": "04:40 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071640"
+    },
+    "4667": {
+      "movie": "Bethlehem Kudumba Unit",
+      "date": "20260907",
+      "time": "05:05 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609071705"
+    },
+    "4742": {
+      "movie": "Bethlehem Kudumba Unit",
+      "date": "20260907",
+      "time": "08:15 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609072015"
+    },
+    "4685": {
+      "movie": "Bethlehem Kudumba Unit",
+      "date": "20260907",
+      "time": "10:55 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609072255"
+    },
+    "4678": {
+      "movie": "Mirzapur: The Movie",
+      "date": "20260907",
+      "time": "10:25 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609072225"
+    }
+  }
+}
