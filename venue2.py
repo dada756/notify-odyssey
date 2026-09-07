@@ -213,6 +213,12 @@ def fetch_venue_data():
             log("PARSE-DEBUG", f"Found {len(show_details_list)} item(s) in 'ShowDetails' array.")
             
             for sd_idx, show_detail in enumerate(show_details_list):
+                # >>> NEW: Fallback Date Validation <<<
+                actual_date = show_detail.get("Date", "")
+                if actual_date != date_code:
+                    log("WARN", f"Fallback data detected! Requested {date_code} but API returned '{actual_date}'. Skipping this block.")
+                    continue
+                    # >>> END NEW <<<
                 events = show_detail.get("Event", [])                
                 for event in events:
                     event_title = event.get("EventTitle", "Unknown Title")
