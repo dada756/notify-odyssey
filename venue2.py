@@ -7,13 +7,13 @@ import subprocess
 from datetime import datetime
 
 # --- CONFIGURATION ---
-DATES = ["20260814"]
+DATES = ["20260908"]
 VENUE_CODE = "ALUC"
 STATE_FILE = "aluc_venue_state.json"
 MAX_RUNTIME_SECONDS = (5 * 3600) + (55 * 60)  # 5 hours 55 mins
 
 # >>> NEW: Target Movies for Notifications (Case-Insensitive) <<<
-TARGET_MOVIE_KEYWORDS = ["DC"]
+TARGET_MOVIE_KEYWORDS = ["Unit", "mirzapur", "irumudi"]
 
 # Track WARP State natively
 USE_WARP = False
@@ -369,7 +369,7 @@ def main():
         cycle_count += 1
         
         log("INFO", "⏳ Sleeping for 20 seconds before the next loop...")
-        time.sleep(24)
+        time.sleep(4)
         
     log("INFO", "🏁 Time limit reached (5h 55m). Gracefully shutting down to prevent runner force-kill.")
 
