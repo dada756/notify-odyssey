@@ -1,0 +1,110 @@
+{
+  "known_movies": [
+    "Romanchakam",
+    "Irumudi",
+    "Mirzapur: The Movie",
+    "Bethlehem Kudumba Unit",
+    "Hanuman Ansh"
+  ],
+  "known_sessions": {
+    "4716": {
+      "movie": "Hanuman Ansh",
+      "date": "20260908",
+      "time": "10:20 AM",
+      "screen": "SCREEN 4",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081020"
+    },
+    "4712": {
+      "movie": "Hanuman Ansh",
+      "date": "20260908",
+      "time": "01:35 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081335"
+    },
+    "4719": {
+      "movie": "Hanuman Ansh",
+      "date": "20260908",
+      "time": "07:20 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081920"
+    },
+    "4706": {
+      "movie": "Mirzapur: The Movie",
+      "date": "20260908",
+      "time": "10:20 AM",
+      "screen": "SCREEN 2",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081020"
+    },
+    "4720": {
+      "movie": "Mirzapur: The Movie",
+      "date": "20260908",
+      "time": "10:15 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Hindi",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609082215"
+    },
+    "4711": {
+      "movie": "Bethlehem Kudumba Unit",
+      "date": "20260908",
+      "time": "10:30 AM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081030"
+    },
+    "4708": {
+      "movie": "Bethlehem Kudumba Unit",
+      "date": "20260908",
+      "time": "04:55 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081655"
+    },
+    "4715": {
+      "movie": "Bethlehem Kudumba Unit",
+      "date": "20260908",
+      "time": "10:45 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609082245"
+    },
+    "4717": {
+      "movie": "Irumudi",
+      "date": "20260908",
+      "time": "01:15 PM",
+      "screen": "SCREEN 4",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081315"
+    },
+    "4714": {
+      "movie": "Irumudi",
+      "date": "20260908",
+      "time": "07:55 PM",
+      "screen": "SCREEN 3",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081955"
+    },
+    "4707": {
+      "movie": "Romanchakam",
+      "date": "20260908",
+      "time": "02:00 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609081400"
+    }
+  }
+}
