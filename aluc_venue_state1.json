@@ -1,0 +1,16 @@
+{
+  "known_movies": [
+    "Epic"
+  ],
+  "known_sessions": {
+    "4747": {
+      "movie": "Epic",
+      "date": "20260910",
+      "time": "07:45 PM",
+      "screen": "SCREEN 2",
+      "format": "2D Telugu",
+      "attribute": "BARCO LASER 4K ATMOS",
+      "datetime": "202609101945"
+    }
+  }
+}
