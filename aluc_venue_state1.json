@@ -1,12 +1,12 @@
 {
   "known_movies": [
-    "Bethlehem Kudumba Unit",
-    "Mirzapur: The Movie",
     "Irumudi",
-    "Hanuman Ansh",
     "Epic",
     "Sardar 2",
-    "Mandaadi"
+    "Bethlehem Kudumba Unit",
+    "Mandaadi",
+    "Hanuman Ansh",
+    "Mirzapur: The Movie"
   ],
   "known_sessions": {
     "4747": {
