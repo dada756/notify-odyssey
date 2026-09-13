@@ -1,4 +1,4 @@
-name: 6th
+name: pcx 2
 
 on:
   workflow_dispatch:
