@@ -1,0 +1,48 @@
+{
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 1790002131.8678527,
+  "available_seats": {
+    "5323_M_20": {
+      "session_id": "5323",
+      "row": "M",
+      "seat_num": "20",
+      "meta": {
+        "block_code": "D",
+        "row_index": "3",
+        "backend_seat": "19"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0004",
+      "event_code": "ET00518242",
+      "event_title": "The Paradise",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 2D",
+      "date_code": "20260926",
+      "time": "11:20 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    },
+    "5323_M_21": {
+      "session_id": "5323",
+      "row": "M",
+      "seat_num": "21",
+      "meta": {
+        "block_code": "D",
+        "row_index": "3",
+        "backend_seat": "18"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0004",
+      "event_code": "ET00518242",
+      "event_title": "The Paradise",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 2D",
+      "date_code": "20260926",
+      "time": "11:20 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    }
+  }
+}
