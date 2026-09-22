@@ -1,4 +1,4 @@
-name: pcx 5
+name: pcx 6
 
 on:
   workflow_dispatch:
