@@ -65,10 +65,10 @@ jobs:
           WORKER_URL: '${{ secrets.WORKER_URL }}'
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
         run: |
-          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/allu_1.py" -o allu_1.py
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/allu_1_test.py" -o allu_1_test.py
           
-          python -u allu_1.py
+          python -u allu_1_test.py
           
       - name: Secure Cleanup
         if: always() # Ensures the file is deleted even if the python script above crashes
-        run: rm -f allu_1.py
+        run: rm -f allu_1_test.py
