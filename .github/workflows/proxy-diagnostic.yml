@@ -1,0 +1,28 @@
+name: Proxy Diagnostic
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # If your bot job sets `environment: something`, add the SAME line here,
+    # otherwise this job reads the repository-level secret instead of the one the bot uses.
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install curl_cffi
+        run: pip install curl_cffi
+
+      - name: Run proxy diagnostic
+        env:
+          PROXY_LIST: ${{ secrets.PROXY_LIST }}
+        run: python proxy_diag.py
