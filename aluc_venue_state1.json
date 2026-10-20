@@ -1,0 +1,53 @@
+{
+  "known_movies": [
+    "Ranabaali",
+    "Jailer 2"
+  ],
+  "known_sessions": {
+    "6238": {
+      "movie": "Jailer 2",
+      "date": "20261021",
+      "time": "09:30 AM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 2D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202610210930"
+    },
+    "6240": {
+      "movie": "Jailer 2",
+      "date": "20261021",
+      "time": "04:30 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 2D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202610211630"
+    },
+    "6241": {
+      "movie": "Jailer 2",
+      "date": "20261021",
+      "time": "07:55 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 2D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202610211955"
+    },
+    "6242": {
+      "movie": "Jailer 2",
+      "date": "20261021",
+      "time": "11:20 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 2D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202610212320"
+    },
+    "6239": {
+      "movie": "Ranabaali",
+      "date": "20261021",
+      "time": "12:55 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202610211255"
+    }
+  }
+}
