@@ -1,4 +1,4 @@
-name: aluc unb 2
+name: venue
 
 on:
   workflow_dispatch:
