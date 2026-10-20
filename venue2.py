@@ -120,7 +120,7 @@ def save_state(full_new_state, commit_msg):
                 return full_new_state
             else:
                 log("WARN", f"Push attempt {attempt+1} failed. Retrying in 2 seconds...")
-                time.sleep(2)
+                time.sleep(1)
         else:
             log("GIT", "Merged state is identical to remote. Nothing to commit or push.")
             return full_new_state
@@ -157,7 +157,7 @@ def toggle_warp():
         log("PROXY", "WARP is OFF. Connecting to WARP (Switching to Cloudflare Proxy)...")
         res = subprocess.run(["warp-cli", "--accept-tos", "connect"], capture_output=True, text=True, check=False)
         log("PROXY-DEBUG", f"Connect STDOUT: {res.stdout.strip()}")
-        time.sleep(5)
+        time.sleep(3)
         USE_WARP = True
 
 def make_bms_request(method, url, max_retries=3, **kwargs):
@@ -188,7 +188,7 @@ def make_bms_request(method, url, max_retries=3, **kwargs):
             log("ERROR", f"Network exception on attempt {attempt}: {e}")
             if attempt < max_retries:
                 log("NET", "Sleeping for 3 seconds before retry...")
-                time.sleep(5)
+                time.sleep(3)
                 continue
     return None
 
@@ -198,7 +198,7 @@ def fetch_venue_data():
     current_sessions = {}
     
     for date_code in DATES:
-        time.sleep(6) 
+        time.sleep(3) 
         
         url = f"https://in.bookmyshow.com/api/v3/mobile/showtimes/byvenue?appCode=MOBAND2&venueCode={VENUE_CODE}&dateCode={date_code}"
         
