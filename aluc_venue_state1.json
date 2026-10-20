@@ -1,7 +1,7 @@
 {
   "known_movies": [
-    "Ranabaali",
-    "Jailer 2"
+    "Jailer 2",
+    "Ranabaali"
   ],
   "known_sessions": {
     "6238": {
@@ -39,6 +39,15 @@
       "format": "DOLBY CINEMA 2D Telugu",
       "attribute": "DOLBY CINEMA",
       "datetime": "202610212320"
+    },
+    "6239": {
+      "movie": "Ranabaali",
+      "date": "20261021",
+      "time": "12:55 PM",
+      "screen": "SCREEN 1",
+      "format": "2D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202610211255"
     }
   }
 }
