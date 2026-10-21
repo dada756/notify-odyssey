@@ -1,0 +1,52 @@
+{
+  "known_movies": [
+    "Namit Malhotra's Ramayana"
+  ],
+  "known_sessions": {
+    "6248": {
+      "movie": "Namit Malhotra's Ramayana",
+      "date": "20261105",
+      "time": "07:00 AM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202611050700"
+    },
+    "6324": {
+      "movie": "Namit Malhotra's Ramayana",
+      "date": "20261105",
+      "time": "07:02 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D Telugu",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202611051902"
+    },
+    "6249": {
+      "movie": "Namit Malhotra's Ramayana",
+      "date": "20261105",
+      "time": "11:00 AM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D Hindi",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202611051100"
+    },
+    "6323": {
+      "movie": "Namit Malhotra's Ramayana",
+      "date": "20261105",
+      "time": "03:00 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D Hindi",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202611051500"
+    },
+    "6325": {
+      "movie": "Namit Malhotra's Ramayana",
+      "date": "20261105",
+      "time": "11:00 PM",
+      "screen": "SCREEN 1",
+      "format": "DOLBY CINEMA 3D Hindi",
+      "attribute": "DOLBY CINEMA",
+      "datetime": "202611052300"
+    }
+  }
+}
