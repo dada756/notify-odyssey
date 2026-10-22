@@ -25,7 +25,7 @@ jobs:
           python-version: '3.11'
           
       - name: Install Python Dependencies
-        run: pip install requests curl-cffi
+        run: pip install requests curl-cffi supabase
 
       - name: Configure Git User
         run: |
