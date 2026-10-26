@@ -17,6 +17,24 @@
       "eventName": "Jailer 2 - Tamil",
       "screenName": "SCREEN 3",
       "attributes": "BARCO 4K LASER"
+    },
+    "258226": {
+      "time": "10:45 AM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258227": {
+      "time": "01:55 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258228": {
+      "time": "05:05 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
     }
   },
   "20261030": {},
