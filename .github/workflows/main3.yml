@@ -1,4 +1,4 @@
-name: venue 1
+name: venue 2
 
 on:
   workflow_dispatch:
