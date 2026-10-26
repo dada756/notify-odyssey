@@ -1,5 +1,36 @@
 {
-  "20261029": {},
+  "20261029": {
+    "258210": {
+      "time": "11:00 AM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": ""
+    },
+    "258211": {
+      "time": "02:35 PM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258212": {
+      "time": "05:25 PM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258213": {
+      "time": "08:15 PM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258214": {
+      "time": "11:30 PM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": ""
+    }
+  },
   "20261030": {},
   "20261031": {}
 }
