@@ -31,6 +31,19 @@
       "attributes": ""
     }
   },
-  "20261030": {},
+  "20261030": {
+    "258239": {
+      "time": "02:00 PM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": ""
+    },
+    "258240": {
+      "time": "08:10 PM",
+      "eventName": "418 - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": ""
+    }
+  },
   "20261031": {}
 }
