@@ -1,0 +1,70 @@
+{
+  "20261105": {
+    "6421": {
+      "time": "06:55 AM",
+      "eventName": "Namit Malhotra's Ramayana (Telugu) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6248": {
+      "time": "07:00 AM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D) (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6324": {
+      "time": "07:02 PM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D) (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6405": {
+      "time": "07:20 AM",
+      "eventName": "Namit Malhotra's Ramayana (3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6407": {
+      "time": "07:20 PM",
+      "eventName": "Namit Malhotra's Ramayana (3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6249": {
+      "time": "11:00 AM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6323": {
+      "time": "03:00 PM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6325": {
+      "time": "11:02 PM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6406": {
+      "time": "11:20 AM",
+      "eventName": "Namit Malhotra's Ramayana (3D)(Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6404": {
+      "time": "03:20 PM",
+      "eventName": "Namit Malhotra's Ramayana (3D)(Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6408": {
+      "time": "11:20 PM",
+      "eventName": "Namit Malhotra's Ramayana (3D)(Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    }
+  }
+}
