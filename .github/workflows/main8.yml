@@ -1,0 +1,99 @@
+name: venue 6
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 */5 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  poll-bms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    
+    steps:
+      - name: Checkout Repository (Shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore Unified Fast Cache (Venv + WARP .debs + Fonts)
+        id: fast-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.fast-cache
+          # Bump v1 -> v2 if you ever want to force-refresh cached packages
+          key: fast-boot-v1-${{ runner.os }}
+          restore-keys: |
+            fast-boot-v1-
+
+      - name: Bootstrap & Run Polling Script
+        env:
+          # --- SECRETS ---
+          NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
+          PROXY_LIST: '${{ secrets.PROXY_LIST }}'
+          WORKER_URL: '${{ secrets.WORKER_URL }}'
+          WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
+          
+          # --- STATIC CONFIGURATION ---
+          DATES: '20261105, 20261106, 20261107, 20261108'
+          VENUE_CODE: 'ALUC'
+          TARGET_MOVIE: 'rama'
+        run: |
+          mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
+
+          # 1. Instant local Git config (faster than --global)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
+
+          # 2. Pre-cache Roboto Fonts once
+          if [ ! -f ~/.fast-cache/fonts/Roboto-Regular.ttf ]; then
+            curl -sL "https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Regular.ttf" -o ~/.fast-cache/fonts/Roboto-Regular.ttf
+            curl -sL "https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Medium.ttf" -o ~/.fast-cache/fonts/Roboto-Medium.ttf
+          fi
+          cp -n ~/.fast-cache/fonts/Roboto-*.ttf . || true
+
+          # 3. Native Python Venv via uv (0.0s on cache hit, ~1.5s on cache miss)
+          if [ ! -x ~/.fast-cache/venv/bin/python ]; then
+            echo "⚡ Cache miss: Building ultra-lean Python environment (no supabase SDK)..."
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            ~/.local/bin/uv venv ~/.fast-cache/venv
+            ~/.local/bin/uv pip install --python ~/.fast-cache/venv/bin/python requests curl-cffi Pillow
+          fi
+
+          # 4. Lazy Background WARP Setup (0.0s blocking time!)
+          (
+            if compgen -G "$HOME/.fast-cache/warp-debs/*.deb" > /dev/null; then
+              echo "[WARP-BG] Installing WARP from cached .deb packages..."
+              sudo dpkg -i --force-depends ~/.fast-cache/warp-debs/*.deb || true
+            else
+              echo "[WARP-BG] Cache miss: Downloading WARP via targeted apt-get update..."
+              curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+              echo "deb [arch=amd64 signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+              sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/cloudflare-client.list" -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
+              sudo apt-get install -y -o Dir::Cache::Archives="$HOME/.fast-cache/warp-debs" cloudflare-warp
+            fi
+
+            # Wait for warp-svc daemon socket to become responsive
+            for i in {1..30}; do
+              warp-cli --accept-tos status >/dev/null 2>&1 && break
+              sleep 0.2
+            done
+
+            warp-cli --accept-tos registration new || true
+            warp-cli --accept-tos mode proxy
+            warp-cli --accept-tos connect
+
+            # Sub-second readiness poll
+            for i in {1..30}; do
+              warp-cli --accept-tos status | grep -q "Connected" && break
+              sleep 0.2
+            done
+            echo "[WARP-BG] WARP SOCKS5 proxy is hot and standing by on 127.0.0.1:40000."
+          ) >/tmp/warp_setup.log 2>&1 &
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/venue.py" -o venue.py
+          # 5. Launch Immediately!
+          ~/.fast-cache/venv/bin/python -u venue.py
