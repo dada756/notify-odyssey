@@ -86,5 +86,25 @@
       "screenName": "SCREEN 1",
       "attributes": "DOLBY CINEMA"
     }
+  },
+  "20261107": {
+    "6330": {
+      "time": "07:00 AM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D) (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6475": {
+      "time": "07:20 AM",
+      "eventName": "Namit Malhotra's Ramayana (3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6331": {
+      "time": "11:00 AM",
+      "eventName": "Namit Malhotra's Ramayana (DOLBY CINEMA 3D)(Hindi) - Hindi",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    }
   }
 }
