@@ -49,6 +49,31 @@
       "attributes": "PCX Screen"
     }
   },
-  "20261030": {},
+  "20261030": {
+    "258242": {
+      "time": "01:20 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258243": {
+      "time": "07:40 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258244": {
+      "time": "10:50 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258245": {
+      "time": "04:30 PM",
+      "eventName": "Jailer 2 - Tamil",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    }
+  },
   "20261031": {}
 }
