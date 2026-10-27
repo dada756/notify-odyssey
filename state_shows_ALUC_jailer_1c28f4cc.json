@@ -1,5 +1,18 @@
 {
   "20261030": {},
   "20261031": {},
-  "20261029": {}
+  "20261029": {
+    "6490": {
+      "time": "11:15 AM",
+      "eventName": "Jailer 2 (DOLBY CINEMA 2D)(Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    },
+    "6491": {
+      "time": "02:45 PM",
+      "eventName": "Jailer 2 (DOLBY CINEMA 2D)(Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    }
+  }
 }
