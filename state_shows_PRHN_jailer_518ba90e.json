@@ -105,6 +105,24 @@
       "eventName": "Jailer 2 - Tamil",
       "screenName": "SCREEN 1",
       "attributes": ""
+    },
+    "258310": {
+      "time": "01:25 PM",
+      "eventName": "Jailer 2 (HDR By Barco)(Telugu) - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": "PCX HDR by BARCO"
+    },
+    "258311": {
+      "time": "07:30 PM",
+      "eventName": "Jailer 2 (HDR By Barco)(Telugu) - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": "PCX HDR by BARCO"
+    },
+    "258312": {
+      "time": "10:40 PM",
+      "eventName": "Jailer 2 (HDR By Barco)(Telugu) - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": "PCX HDR by BARCO"
     }
   }
 }
