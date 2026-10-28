@@ -25,6 +25,12 @@
       "eventName": "Jailer 2 (DOLBY CINEMA 2D)(Telugu) - Telugu",
       "screenName": "SCREEN 1",
       "attributes": "DOLBY CINEMA"
+    },
+    "6508": {
+      "time": "04:35 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "LASER 4K ATMOS"
     }
   }
 }
