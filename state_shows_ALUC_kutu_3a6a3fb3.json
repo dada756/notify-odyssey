@@ -7,7 +7,21 @@
       "attributes": "DOLBY CINEMA"
     }
   },
-  "20261031": {},
-  "20261101": {},
+  "20261031": {
+    "6530": {
+      "time": "10:00 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    }
+  },
+  "20261101": {
+    "6531": {
+      "time": "10:00 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "DOLBY CINEMA"
+    }
+  },
   "20261102": {}
 }
