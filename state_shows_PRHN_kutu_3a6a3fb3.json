@@ -1,6 +1,140 @@
 {
-  "20261030": {},
-  "20261031": {},
+  "20261030": {
+    "258155": {
+      "time": "08:25 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258346": {
+      "time": "08:40 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 5",
+      "attributes": ""
+    },
+    "258149": {
+      "time": "09:00 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": ""
+    },
+    "258255": {
+      "time": "10:30 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258234": {
+      "time": "11:25 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258270": {
+      "time": "11:40 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258268": {
+      "time": "02:20 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258151": {
+      "time": "02:45 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": ""
+    },
+    "258152": {
+      "time": "05:25 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258153": {
+      "time": "08:30 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 4",
+      "attributes": ""
+    },
+    "258235": {
+      "time": "08:35 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258154": {
+      "time": "11:10 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258271": {
+      "time": "11:35 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    }
+  },
+  "20261031": {
+    "258297": {
+      "time": "10:15 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258292": {
+      "time": "11:00 AM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258309": {
+      "time": "01:05 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258293": {
+      "time": "02:00 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258299": {
+      "time": "05:10 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": ""
+    },
+    "258305": {
+      "time": "07:20 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258296": {
+      "time": "08:15 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    },
+    "258301": {
+      "time": "10:15 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "258295": {
+      "time": "11:15 PM",
+      "eventName": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "screenName": "SCREEN 6",
+      "attributes": "PCX Screen"
+    }
+  },
   "20261101": {
     "258357": {
       "time": "10:15 AM",
