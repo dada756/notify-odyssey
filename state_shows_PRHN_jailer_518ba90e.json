@@ -75,5 +75,30 @@
       "attributes": ""
     }
   },
-  "20261031": {}
+  "20261031": {
+    "258273": {
+      "time": "01:20 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258275": {
+      "time": "07:40 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258276": {
+      "time": "10:50 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    },
+    "258274": {
+      "time": "04:30 PM",
+      "eventName": "Jailer 2 - Tamil",
+      "screenName": "SCREEN 1",
+      "attributes": ""
+    }
+  }
 }
