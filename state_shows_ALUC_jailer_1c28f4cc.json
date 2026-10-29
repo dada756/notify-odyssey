@@ -25,7 +25,26 @@
       "attributes": "LASER 4K ATMOS"
     }
   },
-  "20261031": {},
+  "20261031": {
+    "6549": {
+      "time": "10:30 AM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 3",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6545": {
+      "time": "01:15 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6547": {
+      "time": "07:30 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    }
+  },
   "20261029": {
     "6490": {
       "time": "11:15 AM",
