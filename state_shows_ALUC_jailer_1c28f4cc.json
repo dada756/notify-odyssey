@@ -13,7 +13,7 @@
       "attributes": "LASER 4K ATMOS"
     },
     "6538": {
-      "time": "10:45 PM",
+      "time": "11:10 PM",
       "eventName": "Jailer 2 (Telugu) - Telugu",
       "screenName": "SCREEN 2",
       "attributes": "LASER 4K ATMOS"
@@ -22,6 +22,12 @@
       "time": "10:20 AM",
       "eventName": "Jailer 2 (Telugu) - Telugu",
       "screenName": "SCREEN 3",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6613": {
+      "time": "10:00 AM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 4",
       "attributes": "LASER 4K ATMOS"
     }
   },
