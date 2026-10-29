@@ -1,5 +1,24 @@
 {
-  "20261030": {},
+  "20261030": {
+    "6502": {
+      "time": "01:15 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6504": {
+      "time": "07:30 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "6538": {
+      "time": "10:45 PM",
+      "eventName": "Jailer 2 (Telugu) - Telugu",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    }
+  },
   "20261031": {},
   "20261029": {
     "6490": {
