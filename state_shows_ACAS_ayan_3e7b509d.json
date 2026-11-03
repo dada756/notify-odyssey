@@ -1,0 +1,34 @@
+{
+  "20261106": {
+    "39441": {
+      "time": "08:20 AM",
+      "eventName": "Ramayana (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "LASER DOLBY ATMOS"
+    },
+    "39430": {
+      "time": "07:10 PM",
+      "eventName": "Ramayana (Telugu) - Telugu",
+      "screenName": "SCREEN 1",
+      "attributes": "LASER DOLBY ATMOS"
+    },
+    "39442": {
+      "time": "12:15 PM",
+      "eventName": "Ramayana - Hindi",
+      "screenName": "SCREEN 1",
+      "attributes": "LASER DOLBY ATMOS"
+    },
+    "39432": {
+      "time": "03:25 PM",
+      "eventName": "Ramayana - Hindi",
+      "screenName": "SCREEN 3",
+      "attributes": "LASER DOLBY DIGITAL 7.1"
+    },
+    "39431": {
+      "time": "10:55 PM",
+      "eventName": "Ramayana - Hindi",
+      "screenName": "SCREEN 1",
+      "attributes": "LASER DOLBY ATMOS"
+    }
+  }
+}
