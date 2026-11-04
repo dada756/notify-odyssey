@@ -1,0 +1,79 @@
+{
+  "venue_code": "ALUC",
+  "session_ids": [
+    "6711"
+  ],
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 0,
+  "available_seats": {
+    "6711_S_27": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6711",
+      "row": "S",
+      "seat_num": "27",
+      "meta": {
+        "block_code": "D",
+        "row_index": "9",
+        "backend_seat": "07"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261108",
+      "time": "07:00 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    },
+    "6711_S_28": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6711",
+      "row": "S",
+      "seat_num": "28",
+      "meta": {
+        "block_code": "D",
+        "row_index": "9",
+        "backend_seat": "06"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261108",
+      "time": "07:00 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    },
+    "6711_S_29": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6711",
+      "row": "S",
+      "seat_num": "29",
+      "meta": {
+        "block_code": "D",
+        "row_index": "9",
+        "backend_seat": "05"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261108",
+      "time": "07:00 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    }
+  }
+}
