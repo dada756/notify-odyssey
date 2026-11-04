@@ -30,6 +30,9 @@ jobs:
           # --- SECRETS ---
           NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
 
+          WORKER_URL: '${{ secrets.WORKER_URL }}'                 # <-- ADD THIS
+          WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
+
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'ALUC'
           DATES: '20261108'
