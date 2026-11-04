@@ -41,6 +41,18 @@
       "eventName": "Ramayana - Hindi",
       "screenName": "SCREEN 4",
       "attributes": "LASER DOLBY DIGITAL 7.1"
+    },
+    "39801": {
+      "time": "03:15 PM",
+      "eventName": "Ramayana (Telugu) - Telugu",
+      "screenName": "SCREEN 5",
+      "attributes": "LASER DOLBY DIGITAL 7.1"
+    },
+    "39800": {
+      "time": "08:40 AM",
+      "eventName": "Ramayana - Hindi",
+      "screenName": "SCREEN 3",
+      "attributes": "LASER DOLBY DIGITAL 7.1"
     }
   }
 }
