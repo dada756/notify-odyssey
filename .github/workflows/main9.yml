@@ -1,0 +1,107 @@
+name: ter
+
+on:
+  workflow_dispatch:
+    inputs:
+      venue_code:
+        description: 'Venue Code (e.g. ALUC)'
+        required: false
+        default: 'ALUC'
+      dates:
+        description: 'Comma-separated Dates (YYYYMMDD)'
+        required: false
+        default: '20261108'
+      desired_seats:
+        description: 'Desired Seats (e.g. K:18,19,17,20,16; L:17-20; Q:34; H:7)'
+        required: false
+        default: 'K:18,19,17,20,16; L:18,19,17,20; J:18,19,17,20; I:18,19,17,20; H:18,19,17,20'
+      target_attribute:
+        description: 'Screen Attribute (e.g. DOLBY CINEMA, LASER 4K ATMOS, or empty for ANY)'
+        required: false
+        default: ''
+      target_dimension:
+        description: 'Dimension (e.g. 2D, 3D, or empty for ANY)'
+        required: false
+        default: ''
+      target_language:
+        description: 'Language (e.g. Telugu, Hindi, or empty for ANY)'
+        required: false
+        default: ''
+      target_event:
+        description: 'Event Code or Movie Title Substring (optional)'
+        required: false
+        default: ''
+      target_screen:
+        description: 'Screen Name (e.g. SCREEN 1, or empty for ANY)'
+        required: false
+        default: ''
+      target_sessions:
+        description: 'Explicit Session IDs (comma-separated, optional)'
+        required: false
+        default: ''
+      time_start:
+        description: 'Window Start Time (e.g. 07:00 AM, or empty for ANY)'
+        required: false
+        default: ''
+      time_end:
+        description: 'Window End Time (e.g. 11:59 PM, or empty for ANY)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  snipe-bms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout Repository (Shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore Sniper Venv Cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.sniper-cache/venv
+          key: sniper-venv-v1-${{ runner.os }}
+          restore-keys: |
+            sniper-venv-v1-
+
+      - name: Bootstrap & Launch Sniper
+        env:
+          # --- SECRETS ---
+          NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
+
+          # --- DYNAMIC / STATIC CONFIGURATION ---
+          VENUE_CODE: '${{ inputs.venue_code || ''ALUC'' }}'
+          DATES: '${{ inputs.dates || ''20261108'' }}'
+          DESIRED_SEATS: '${{ inputs.desired_seats || ''S:27,28,29;'' }}'
+          TARGET_ATTRIBUTE: '${{ inputs.target_attribute || ''DOLBY CINEMA'' }}'
+          TARGET_DIMENSION: '${{ inputs.target_dimension || '''' }}'
+          TARGET_LANGUAGE: '${{ inputs.target_language || '''' }}'
+          TARGET_EVENT: '${{ inputs.target_event || '''' }}'
+          TARGET_SCREEN: '${{ inputs.target_screen || '''' }}'
+          TARGET_SESSIONS: '${{ inputs.target_sessions || ''6333'' }}'
+          TARGET_TIME_START: '${{ inputs.time_start || '''' }}'
+          TARGET_TIME_END: '${{ inputs.time_end || '''' }}'
+          MAX_SHOWS: '6'
+          MAX_WAVES: '5'
+          MAX_DYNAMIC_THREADS: '30'
+          MAX_SEAT_RETRIES: '25'
+          COOLDOWN_SECONDS: '250'
+          POLL_INTERVAL: '1.0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
+
+          if [ ! -x ~/.sniper-cache/venv/bin/python ]; then
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            ~/.local/bin/uv venv ~/.sniper-cache/venv
+            ~/.local/bin/uv pip install --python ~/.sniper-cache/venv/bin/python requests curl-cffi
+          fi
+
+          exec ~/.sniper-cache/venv/bin/python -u bms_sniper.py
