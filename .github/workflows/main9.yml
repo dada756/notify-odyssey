@@ -2,51 +2,6 @@ name: ter
 
 on:
   workflow_dispatch:
-    inputs:
-      venue_code:
-        description: 'Venue Code (e.g. ALUC)'
-        required: false
-        default: 'ALUC'
-      dates:
-        description: 'Comma-separated Dates (YYYYMMDD)'
-        required: false
-        default: '20261108'
-      desired_seats:
-        description: 'Desired Seats (e.g. K:18,19,17,20,16; L:17-20; Q:34; H:7)'
-        required: false
-        default: 'K:18,19,17,20,16; L:18,19,17,20; J:18,19,17,20; I:18,19,17,20; H:18,19,17,20'
-      target_attribute:
-        description: 'Screen Attribute (e.g. DOLBY CINEMA, LASER 4K ATMOS, or empty for ANY)'
-        required: false
-        default: ''
-      target_dimension:
-        description: 'Dimension (e.g. 2D, 3D, or empty for ANY)'
-        required: false
-        default: ''
-      target_language:
-        description: 'Language (e.g. Telugu, Hindi, or empty for ANY)'
-        required: false
-        default: ''
-      target_event:
-        description: 'Event Code or Movie Title Substring (optional)'
-        required: false
-        default: ''
-      target_screen:
-        description: 'Screen Name (e.g. SCREEN 1, or empty for ANY)'
-        required: false
-        default: ''
-      target_sessions:
-        description: 'Explicit Session IDs (comma-separated, optional)'
-        required: false
-        default: ''
-      time_start:
-        description: 'Window Start Time (e.g. 07:00 AM, or empty for ANY)'
-        required: false
-        default: ''
-      time_end:
-        description: 'Window End Time (e.g. 11:59 PM, or empty for ANY)'
-        required: false
-        default: ''
 
 permissions:
   contents: write
@@ -76,17 +31,17 @@ jobs:
           NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
-          VENUE_CODE: '${{ inputs.venue_code || ''ALUC'' }}'
-          DATES: '${{ inputs.dates || ''20261108'' }}'
-          DESIRED_SEATS: '${{ inputs.desired_seats || ''S:27,28,29;'' }}'
-          TARGET_ATTRIBUTE: '${{ inputs.target_attribute || ''DOLBY CINEMA'' }}'
-          TARGET_DIMENSION: '${{ inputs.target_dimension || '''' }}'
-          TARGET_LANGUAGE: '${{ inputs.target_language || '''' }}'
-          TARGET_EVENT: '${{ inputs.target_event || '''' }}'
-          TARGET_SCREEN: '${{ inputs.target_screen || '''' }}'
-          TARGET_SESSIONS: '${{ inputs.target_sessions || ''6333'' }}'
-          TARGET_TIME_START: '${{ inputs.time_start || '''' }}'
-          TARGET_TIME_END: '${{ inputs.time_end || '''' }}'
+          VENUE_CODE: 'ALUC'
+          DATES: '20261108'
+          DESIRED_SEATS: 'S:27,28,29'
+          TARGET_ATTRIBUTE: 'DOLBY CINEMA'
+          TARGET_DIMENSION: ''
+          TARGET_LANGUAGE: ''
+          TARGET_EVENT: ''
+          TARGET_SCREEN: ''
+          TARGET_SESSIONS: '6333'
+          TARGET_TIME_START: ''
+          TARGET_TIME_END: ''
           MAX_SHOWS: '6'
           MAX_WAVES: '5'
           MAX_DYNAMIC_THREADS: '30'
