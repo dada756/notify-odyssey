@@ -41,7 +41,7 @@ jobs:
           TARGET_LANGUAGE: ''
           TARGET_EVENT: ''
           TARGET_SCREEN: ''
-          TARGET_SESSIONS: '6749'
+          TARGET_SESSIONS: '6746'
           TARGET_TIME_START: ''
           TARGET_TIME_END: ''
           MAX_SHOWS: '6'
