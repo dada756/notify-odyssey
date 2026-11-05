@@ -35,7 +35,7 @@ jobs:
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'PVFS'
           DATES: '20261105'
-          DESIRED_SEATS: 'F:17,18,19,20;'
+          DESIRED_SEATS: 'F:17,18,19,20'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
