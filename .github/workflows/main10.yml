@@ -1,4 +1,4 @@
-name: uter
+name: uter NOV 6 1
 
 on:
   workflow_dispatch:
@@ -34,14 +34,14 @@ jobs:
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'ALUC'
-          DATES: '20261111'
-          DESIRED_SEATS: 'L:27,28,29; M:27,28,29;'
+          DATES: '20261106'
+          DESIRED_SEATS: 'H:17,18,19,20; I:17,18,19,20; J:17,18,19,20; K:17,18,19,20;'
           TARGET_ATTRIBUTE: 'DOLBY CINEMA'
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
           TARGET_EVENT: ''
           TARGET_SCREEN: ''
-          TARGET_SESSIONS: '6746'
+          TARGET_SESSIONS: '6328'
           TARGET_TIME_START: ''
           TARGET_TIME_END: ''
           MAX_SHOWS: '6'
