@@ -1,0 +1,64 @@
+name: uter NOV 6 2
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snipe-bms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout Repository (Shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore Sniper Venv Cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.sniper-cache/venv
+          key: sniper-venv-v1-${{ runner.os }}
+          restore-keys: |
+            sniper-venv-v1-
+
+      - name: Bootstrap & Launch Sniper
+        env:
+          # --- SECRETS ---
+          NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
+          WORKER_URL: '${{ secrets.WORKER_URL }}'
+          WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
+
+          # --- DYNAMIC / STATIC CONFIGURATION ---
+          VENUE_CODE: 'ALUC'
+          DATES: '20261106'
+          DESIRED_SEATS: 'H:17,18,19,20; I:17,18,19,20; J:17,18,19,20; K:17,18,19,20;'
+          TARGET_ATTRIBUTE: 'DOLBY CINEMA'
+          TARGET_DIMENSION: ''
+          TARGET_LANGUAGE: ''
+          TARGET_EVENT: ''
+          TARGET_SCREEN: ''
+          TARGET_SESSIONS: '6709'
+          TARGET_TIME_START: ''
+          TARGET_TIME_END: ''
+          MAX_SHOWS: '6'
+          MAX_WAVES: '5'
+          MAX_DYNAMIC_THREADS: '30'
+          MAX_SEAT_RETRIES: '75'
+          COOLDOWN_SECONDS: '250'
+          POLL_INTERVAL: '1.0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
+
+          if [ ! -x ~/.sniper-cache/venv/bin/python ]; then
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            ~/.local/bin/uv venv ~/.sniper-cache/venv
+            ~/.local/bin/uv pip install --python ~/.sniper-cache/venv/bin/python requests curl-cffi
+          fi
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/allu_unblock.py" -o allu_unblock.py
+          exec ~/.sniper-cache/venv/bin/python -u allu_unblock.py
