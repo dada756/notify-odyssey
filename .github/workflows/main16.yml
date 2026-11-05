@@ -33,15 +33,15 @@ jobs:
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
-          VENUE_CODE: 'PVFS'
+          VENUE_CODE: 'ACAS'
           DATES: '20261105'
-          DESIRED_SEATS: 'F:17,18,19,20'
+          DESIRED_SEATS: 'K:07,08'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
           TARGET_EVENT: ''
           TARGET_SCREEN: ''
-          TARGET_SESSIONS: '48198'
+          TARGET_SESSIONS: '39880'
           TARGET_TIME_START: ''
           TARGET_TIME_END: ''
           MAX_SHOWS: '6'
