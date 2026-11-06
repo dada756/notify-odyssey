@@ -3,8 +3,8 @@
   "session_ids": [
     "121717"
   ],
-  "completed_waves": 0,
-  "last_wave_finish_timestamp": 0,
+  "completed_waves": 1,
+  "last_wave_finish_timestamp": 1793965811.0075986,
   "available_seats": {
     "121717_O_17": {
       "venue_code": "AMBH",
