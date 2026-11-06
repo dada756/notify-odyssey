@@ -1,4 +1,4 @@
-name: ter
+name: unb
 
 on:
   workflow_dispatch:
