@@ -1,0 +1,194 @@
+{
+  "venue_code": "AMBH",
+  "session_ids": [
+    "121717"
+  ],
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 0,
+  "available_seats": {
+    "121717_O_17": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "17",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0218"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_16": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "16",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0217"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_15": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "15",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0216"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_14": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "14",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0215"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_13": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "13",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0214"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_12": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "12",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0213"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_11": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "11",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0212"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    },
+    "121717_O_10": {
+      "venue_code": "AMBH",
+      "venue_name": "AMB Cinemas: Gachibowli",
+      "session_id": "121717",
+      "row": "O",
+      "seat_num": "10",
+      "meta": {
+        "block_code": "B",
+        "row_index": "15",
+        "backend_seat": "0211"
+      },
+      "c_code": "0000000002",
+      "a_id": "2",
+      "ticket_category": "0002",
+      "event_code": "ET00451914",
+      "event_title": "Ramayana",
+      "event_language": "Hindi",
+      "event_dimension": "2D",
+      "date_code": "20261108",
+      "time": "08:15 AM",
+      "screen": "SCREEN 1",
+      "attribute": "HDR BY BARCO"
+    }
+  }
+}
