@@ -97,6 +97,6 @@ jobs:
             done
             echo "[WARP-BG] WARP SOCKS5 proxy is hot and standing by on 127.0.0.1:40000."
           ) >/tmp/warp_setup.log 2>&1 &
-          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/unblock2.py" -o unblock2.py
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/unblock_legacy.py" -o unblock_legacy.py
           # 5. Launch Immediately!
-          ~/.fast-cache/venv/bin/python -u unblock2.py
+          ~/.fast-cache/venv/bin/python -u unblock_legacy.py
