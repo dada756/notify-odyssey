@@ -41,7 +41,7 @@ jobs:
           # --- STATIC CONFIGURATION ---
           DATES: '20261106'
           VENUE_CODE: 'PVFS'
-          TARGET_MOVIE: 'sakh'
+          TARGET_MOVIE: 'sakth'
           TARGET_SCREEN: '03'
           IGNORE_ROWS: 'A,B'
         run: |
