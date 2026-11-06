@@ -42,7 +42,7 @@ jobs:
           DATES: '20261106'
           VENUE_CODE: 'PVFS'
           TARGET_MOVIE: 'sakh'
-          TARGET_SCREEN: '3'
+          TARGET_SCREEN: '03'
           IGNORE_ROWS: 'A,B'
         run: |
           mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
