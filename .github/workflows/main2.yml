@@ -21,7 +21,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.sniper-cache/venv
-          key: sniper-venv-v1-${{ runner.os }}
+          key: unblock-venv-v1-${{ runner.os }}
           restore-keys: |
             sniper-venv-v1-
 
@@ -61,7 +61,7 @@ jobs:
           if [ ! -x ~/.sniper-cache/venv/bin/python ]; then
             curl -LsSf https://astral.sh/uv/install.sh | sh
             ~/.local/bin/uv venv ~/.sniper-cache/venv
-            ~/.local/bin/uv pip install --python ~/.sniper-cache/venv/bin/python requests curl-cffi
+            ~/.local/bin/uv pip install --python ~/.sniper-cache/venv/bin/python requests curl-cffi PIL 
           fi
           curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/unblock.py" -o unblock.py
           exec ~/.sniper-cache/venv/bin/python -u unblock.py
