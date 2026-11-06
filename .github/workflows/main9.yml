@@ -34,15 +34,15 @@ jobs:
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
-          VENUE_CODE: 'PVFS'
+          VENUE_CODE: 'AMBH'
           DATES: '20261108'
-          DESIRED_SEATS: 'E:17,16,15,14,13,12,11,10'
+          DESIRED_SEATS: 'O:17,16,15,14,13,12,11,10'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
           TARGET_EVENT: ''
           TARGET_SCREEN: ''
-          TARGET_SESSIONS: '48348'
+          TARGET_SESSIONS: '121717'
           TARGET_TIME_START: ''
           TARGET_TIME_END: ''
           MAX_SHOWS: '6'
