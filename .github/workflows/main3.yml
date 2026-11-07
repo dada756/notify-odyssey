@@ -39,10 +39,10 @@ jobs:
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
           
           # --- STATIC CONFIGURATION ---
-          DATES: '20261108'
-          VENUE_CODE: 'AKYJ'
+          DATES: '20261107'
+          VENUE_CODE: 'PIIC'
           TARGET_MOVIE: 'yana'
-          TARGET_SCREEN: '1'
+          TARGET_SCREEN: '8'
           IGNORE_ROWS: 'M'
         run: |
           mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
