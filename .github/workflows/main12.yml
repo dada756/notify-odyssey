@@ -1,4 +1,4 @@
-name: uter NOV 7 1
+name: uter
 
 on:
   workflow_dispatch:
