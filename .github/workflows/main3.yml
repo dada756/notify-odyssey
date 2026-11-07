@@ -39,11 +39,11 @@ jobs:
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
           
           # --- STATIC CONFIGURATION ---
-          DATES: '20261109'
+          DATES: '20261108'
           VENUE_CODE: 'ALUC'
-          TARGET_MOVIE: 'ramay'
-          TARGET_SCREEN: '1'
-          IGNORE_ROWS: 'S'
+          TARGET_MOVIE: 'kutum'
+          TARGET_SCREEN: '3'
+          IGNORE_ROWS: 'M'
         run: |
           mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
 
