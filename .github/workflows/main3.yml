@@ -1,0 +1,72 @@
+name: unb new
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 */5 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  poll-bms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    
+    steps:
+      - name: Checkout Repository (Shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore Unified Fast Cache (Venv + WARP .debs + Fonts)
+        id: fast-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.fast-cache
+          # Bump v1 -> v2 if you ever want to force-refresh cached packages
+          key: fast-boot-v2-${{ runner.os }}
+          restore-keys: |
+            fast-boot-v1-
+
+      - name: Bootstrap & Run Polling Script
+        env:
+          # --- SECRETS ---
+          #NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
+          NTFY_TOPIC: 'dobly_unblock'
+          PROXY_LIST: '${{ secrets.PROXY_LIST }}'
+          WORKER_URL: '${{ secrets.WORKER_URL }}'
+          WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
+          
+          # --- STATIC CONFIGURATION ---
+          DATES: '20261107'
+          VENUE_CODE: 'ALUC'
+          TARGET_MOVIE: 'ramay'
+          TARGET_SCREEN: '1'
+          IGNORE_ROWS: 'S'
+        run: |
+          mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
+
+          # 1. Instant local Git config (faster than --global)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
+
+          # 2. Pre-cache Roboto Fonts once
+          if [ ! -f ~/.fast-cache/fonts/Roboto-Regular.ttf ]; then
+            curl -sL "https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Regular.ttf" -o ~/.fast-cache/fonts/Roboto-Regular.ttf
+            curl -sL "https://raw.githubusercontent.com/googlefonts/roboto/main/src/hinted/Roboto-Medium.ttf" -o ~/.fast-cache/fonts/Roboto-Medium.ttf
+          fi
+          cp -n ~/.fast-cache/fonts/Roboto-*.ttf . || true
+
+          # 3. Native Python Venv via uv (0.0s on cache hit, ~1.5s on cache miss)
+          if [ ! -x ~/.fast-cache/venv/bin/python ]; then
+            echo "⚡ Cache miss: Building ultra-lean Python environment (no supabase SDK)..."
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            ~/.local/bin/uv venv ~/.fast-cache/venv
+            ~/.local/bin/uv pip install --python ~/.fast-cache/venv/bin/python requests curl-cffi Pillow
+          fi
+
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/unblock_legacy.py" -o unblock_legacy.py
+          # 5. Launch Immediately!
+          ~/.fast-cache/venv/bin/python -u unblock_legacy.py
