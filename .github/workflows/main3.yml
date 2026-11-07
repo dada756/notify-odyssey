@@ -41,7 +41,7 @@ jobs:
           # --- STATIC CONFIGURATION ---
           DATES: '20261108'
           VENUE_CODE: 'ALUC'
-          TARGET_MOVIE: 'kutum'
+          TARGET_MOVIE: ''
           TARGET_SCREEN: '3'
           IGNORE_ROWS: 'M'
         run: |
