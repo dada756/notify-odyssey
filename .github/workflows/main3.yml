@@ -42,7 +42,7 @@ jobs:
           DATES: '20261108'
           VENUE_CODE: 'ACAS'
           TARGET_MOVIE: 'yana'
-          TARGET_SCREEN: '3'
+          TARGET_SCREEN: '2'
           IGNORE_ROWS: 'M'
         run: |
           mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
