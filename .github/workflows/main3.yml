@@ -40,9 +40,9 @@ jobs:
           
           # --- STATIC CONFIGURATION ---
           DATES: '20261108'
-          VENUE_CODE: 'ACAS'
+          VENUE_CODE: 'ILKS'
           TARGET_MOVIE: 'yana'
-          TARGET_SCREEN: '1'
+          TARGET_SCREEN: '6'
           IGNORE_ROWS: 'M'
         run: |
           mkdir -p ~/.fast-cache/warp-debs ~/.fast-cache/fonts
