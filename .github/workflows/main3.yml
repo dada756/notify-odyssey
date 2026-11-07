@@ -1,4 +1,4 @@
-name: unb new
+name: unb
 
 on:
   workflow_dispatch:
