@@ -41,7 +41,7 @@ jobs:
           # --- STATIC CONFIGURATION ---
           DATES: '20261107'
           VENUE_CODE: 'PIIC'
-          TARGET_MOVIE: 'yana'
+          TARGET_MOVIE: 'hat'
           TARGET_SCREEN: '8'
           IGNORE_ROWS: 'M'
         run: |
