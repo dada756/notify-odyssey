@@ -35,7 +35,7 @@ jobs:
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'ALUC'
-          DATES: '20261109'
+          DATES: '20261108'
           DESIRED_SEATS: 'C:17,16,15,14,13,12,11,10'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
