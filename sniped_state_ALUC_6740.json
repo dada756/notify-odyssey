@@ -3,8 +3,8 @@
   "session_ids": [
     "6740"
   ],
-  "completed_waves": 0,
-  "last_wave_finish_timestamp": 0,
+  "completed_waves": 1,
+  "last_wave_finish_timestamp": 1794154768.5634055,
   "available_seats": {
     "6740_S_17": {
       "venue_code": "ALUC",
