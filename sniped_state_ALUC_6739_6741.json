@@ -4,8 +4,8 @@
     "6739",
     "6741"
   ],
-  "completed_waves": 0,
-  "last_wave_finish_timestamp": 0,
+  "completed_waves": 1,
+  "last_wave_finish_timestamp": 1794154122.3941665,
   "available_seats": {
     "6739_S_14": {
       "venue_code": "ALUC",
