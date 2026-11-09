@@ -60,5 +60,5 @@ jobs:
             ~/.local/bin/uv venv ~/.sniper-cache/venv
             ~/.local/bin/uv pip install --python ~/.sniper-cache/venv/bin/python requests curl-cffi
           fi
-          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/allu_unblock.py" -o allu_unblock.py
-          exec ~/.sniper-cache/venv/bin/python -u allu_unblock.py
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/after_listed.py" -o after_listed.py
+          exec ~/.sniper-cache/venv/bin/python -u after_listed.py
