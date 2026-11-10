@@ -23,7 +23,7 @@ jobs:
           path: ~/.sniper-cache/venv
           key: uter-venv-v1-${{ runner.os }}
           restore-keys: |
-            sniper-venv-v1-
+            uter-venv-v1-
 
       - name: Bootstrap & Launch Sniper
         env:
