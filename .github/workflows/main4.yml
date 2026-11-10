@@ -23,7 +23,7 @@ jobs:
           path: ~/.sniper-cache/venv
           key: ter-venv-v1-${{ runner.os }}
           restore-keys: |
-            sniper-venv-v1-
+            ter-venv-v1-
 
       - name: Bootstrap & Launch Sniper
         env:
