@@ -27,7 +27,7 @@ jobs:
           # Bump v1 -> v2 if you ever want to force-refresh cached packages
           key: unb-v2-${{ runner.os }}
           restore-keys: |
-            fast-boot-v1-
+            unb-v2-
 
       - name: Bootstrap & Run Polling Script
         env:
