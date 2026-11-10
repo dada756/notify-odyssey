@@ -21,7 +21,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.sniper-cache/venv
-          key: sniper-venv-v1-${{ runner.os }}
+          key: uter-venv-v1-${{ runner.os }}
           restore-keys: |
             sniper-venv-v1-
 
