@@ -1,0 +1,102 @@
+{
+  "venue_code": "ALUC",
+  "session_ids": [
+    "6906"
+  ],
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 0,
+  "available_seats": {
+    "6906_R_14": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6906",
+      "row": "R",
+      "seat_num": "14",
+      "meta": {
+        "block_code": "D",
+        "row_index": "8",
+        "backend_seat": "24"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261114",
+      "time": "07:30 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    },
+    "6906_R_13": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6906",
+      "row": "R",
+      "seat_num": "13",
+      "meta": {
+        "block_code": "D",
+        "row_index": "8",
+        "backend_seat": "25"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261114",
+      "time": "07:30 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    },
+    "6906_R_12": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6906",
+      "row": "R",
+      "seat_num": "12",
+      "meta": {
+        "block_code": "D",
+        "row_index": "8",
+        "backend_seat": "26"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261114",
+      "time": "07:30 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    },
+    "6906_R_11": {
+      "venue_code": "ALUC",
+      "venue_name": "ALLU Cinemas: Kokapet",
+      "session_id": "6906",
+      "row": "R",
+      "seat_num": "11",
+      "meta": {
+        "block_code": "D",
+        "row_index": "8",
+        "backend_seat": "27"
+      },
+      "c_code": "0000000005",
+      "a_id": "3",
+      "ticket_category": "0008",
+      "event_code": "ET00523252",
+      "event_title": "Ramayana",
+      "event_language": "Telugu",
+      "event_dimension": "DOLBY CINEMA 3D",
+      "date_code": "20261114",
+      "time": "07:30 PM",
+      "screen": "SCREEN 1",
+      "attribute": "DOLBY CINEMA"
+    }
+  }
+}
