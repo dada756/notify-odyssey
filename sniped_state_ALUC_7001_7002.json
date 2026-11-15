@@ -4,8 +4,8 @@
     "7001",
     "7002"
   ],
-  "completed_waves": 0,
-  "last_wave_finish_timestamp": 0,
+  "completed_waves": 1,
+  "last_wave_finish_timestamp": 1794760508.9498658,
   "available_seats": {
     "7001_N_18": {
       "venue_code": "ALUC",
