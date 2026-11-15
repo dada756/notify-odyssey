@@ -1,4 +1,4 @@
-name: ter
+name: ter 21
 
 on:
   workflow_dispatch:
@@ -35,16 +35,16 @@ jobs:
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'ALUC'
-          DATES: '20261114'
-          DESIRED_SEATS: 'K:18,19,20,17,16,15,14,13,12,11,10; G:18,19,20,17,16,15,14,13,12,11,10; H:18,19,20,17,16,15,14,13,12,11,10; I:18,19,20,17,16,15,14,13,12,11,10; L:18,19,20,17,16,15,14,13,12,11,10;'
+          DATES: '20261121'
+          DESIRED_SEATS: 'K:18,19,20,21,17,16; L:18,19,20,21,17,16; H:18,19,20,21,17,16; I:18,19,20,21,17,16; G:18,19,20,21,17,16;'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
-          TARGET_EVENT: ''
+          TARGET_EVENT: 'zilla'
           TARGET_SCREEN: '1'
           TARGET_SESSIONS: ''
-          TARGET_TIME_START: '03:00 PM'
-          TARGET_TIME_END: '07:00 PM'
+          TARGET_TIME_START: '10:30 AM'
+          TARGET_TIME_END: '01:50 PM'
           MAX_SHOWS: '6'
           MAX_WAVES: '5'
           MAX_DYNAMIC_THREADS: '30'
