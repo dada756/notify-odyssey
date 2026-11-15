@@ -1,4 +1,4 @@
-name: ter
+name: ter 20
 
 on:
   workflow_dispatch:
