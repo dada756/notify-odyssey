@@ -64,5 +64,6 @@ jobs:
             ~/.local/bin/uv pip install --python ~/.fast-cache/venv/bin/python requests curl-cffi Pillow
           fi
 
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/venue.py" -o venue.py
           # 5. Launch Immediately!
           ~/.fast-cache/venv/bin/python -u venue.py
