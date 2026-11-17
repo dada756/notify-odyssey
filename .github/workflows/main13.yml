@@ -1,0 +1,65 @@
+name: ter dec 20
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snipe-bms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout Repository (Shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore Sniper Venv Cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.sniper-cache/venv
+          key: ter-venv-v1-${{ runner.os }}
+          restore-keys: |
+            ter-venv-v1-
+
+      - name: Bootstrap & Launch Sniper
+        env:
+          # --- SECRETS ---
+          #NTFY_TOPIC: '${{ secrets.NTFY_TOPIC }}'
+          NTFY_TOPIC: 'dobly_unblock'
+          WORKER_URL: '${{ secrets.WORKER_URL }}'                 # <-- ADD THIS
+          WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
+
+          # --- DYNAMIC / STATIC CONFIGURATION ---
+          VENUE_CODE: 'ALUC'
+          DATES: '20261220'
+          DESIRED_SEATS: 'K:18,19,20,21,17,16; L:18,19,20,21,17,16; H:18,19,20,21,17,16; I:18,19,20,21,17,16; G:18,19,20,21,17,16;'
+          TARGET_ATTRIBUTE: ''
+          TARGET_DIMENSION: ''
+          TARGET_LANGUAGE: ''
+          TARGET_EVENT: 'zilla'
+          TARGET_SCREEN: '1'
+          TARGET_SESSIONS: ''
+          TARGET_TIME_START: '10:30 AM'
+          TARGET_TIME_END: '12:50 PM'
+          MAX_SHOWS: '6'
+          MAX_WAVES: '5'
+          MAX_DYNAMIC_THREADS: '30'
+          MAX_SEAT_RETRIES: '75'
+          COOLDOWN_SECONDS: '250'
+          POLL_INTERVAL: '1.0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
+
+          if [ ! -x ~/.sniper-cache/venv/bin/python ]; then
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            ~/.local/bin/uv venv ~/.sniper-cache/venv
+            ~/.local/bin/uv pip install --python ~/.sniper-cache/venv/bin/python requests curl-cffi
+          fi
+          curl -s -f -H "X-Worker-Passphrase: $WORKER_PASSPHRASE" "$WORKER_URL/listed.py" -o listed.py
+          exec ~/.sniper-cache/venv/bin/python -u listed.py
