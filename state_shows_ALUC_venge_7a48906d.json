@@ -1,4 +1,29 @@
 {
-  "20261217": {},
+  "20261217": {
+    "7007": {
+      "time": "10:00 AM",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "7043": {
+      "time": "01:15 PM",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "7045": {
+      "time": "07:45 PM",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    },
+    "7046": {
+      "time": "11:00 PM",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
+      "screenName": "SCREEN 2",
+      "attributes": "LASER 4K ATMOS"
+    }
+  },
   "20261218": {}
 }
