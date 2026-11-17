@@ -1,4 +1,41 @@
 {
-  "20261217": {},
+  "20261217": {
+    "259079": {
+      "time": "08:00 AM",
+      "eventName": "Avengers: Doomsday (3D) - English",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "259080": {
+      "time": "11:05 AM",
+      "eventName": "Avengers: Doomsday (3D) - English",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "259081": {
+      "time": "02:10 PM",
+      "eventName": "Avengers: Doomsday (3D) - English",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "259082": {
+      "time": "05:15 PM",
+      "eventName": "Avengers: Doomsday (3D) - English",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "259083": {
+      "time": "08:20 PM",
+      "eventName": "Avengers: Doomsday (3D) - English",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    },
+    "259084": {
+      "time": "11:25 PM",
+      "eventName": "Avengers: Doomsday (3D) - English",
+      "screenName": "SCREEN 3",
+      "attributes": "BARCO 4K LASER"
+    }
+  },
   "20261218": {}
 }
