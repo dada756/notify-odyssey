@@ -40,7 +40,7 @@ jobs:
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
-          TARGET_EVENT: 'zilla'
+          TARGET_EVENT: 'venge'
           TARGET_SCREEN: '1'
           TARGET_SESSIONS: ''
           TARGET_TIME_START: '10:30 AM'
