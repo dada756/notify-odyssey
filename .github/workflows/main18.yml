@@ -34,7 +34,7 @@ jobs:
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
-          VENUE_CODE: 'PRHN'
+          VENUE_CODE: 'ILKS'
           DATES: '20261120'
           DESIRED_SEATS: 'J:10,11,12,13,09; H:10,11,12,13,09;'
           TARGET_ATTRIBUTE: ''
