@@ -46,7 +46,7 @@ jobs:
           TARGET_TIME_START: '10:30 AM'
           TARGET_TIME_END: '03:50 PM'
           MAX_SHOWS: '6'
-          MAX_WAVES: '5'
+          MAX_WAVES: '25'
           MAX_DYNAMIC_THREADS: '30'
           MAX_SEAT_RETRIES: '75'
           COOLDOWN_SECONDS: '250'
