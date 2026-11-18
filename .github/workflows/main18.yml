@@ -35,7 +35,7 @@ jobs:
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'ILKS'
-          DATES: '20261120'
+          DATES: '20261121'
           DESIRED_SEATS: 'J:10,11,12,13,09; H:10,11,12,13,09;'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
