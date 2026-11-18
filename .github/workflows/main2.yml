@@ -34,14 +34,14 @@ jobs:
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
           VENUE_CODE: 'ALUC'
-          DATES: '20261113'
-          DESIRED_SEATS: 'Q:01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35;'
+          DATES: '20261121'
+          DESIRED_SEATS: 'J:18,19,20,21,17,16,13,14,15,12,11;'
           TARGET_ATTRIBUTE: 'DOLBY CINEMA'
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
           TARGET_EVENT: ''
           TARGET_SCREEN: ''
-          TARGET_SESSIONS: '6887'
+          TARGET_SESSIONS: '7117'
           TARGET_TIME_START: ''
           TARGET_TIME_END: ''
           MAX_SHOWS: '6'
