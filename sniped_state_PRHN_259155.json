@@ -1,0 +1,171 @@
+{
+  "venue_code": "PRHN",
+  "session_ids": [
+    "259155"
+  ],
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 0,
+  "available_seats": {
+    "259155_B_21": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "21",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0123"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    },
+    "259155_B_22": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "22",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0122"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    },
+    "259155_B_23": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "23",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0121"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    },
+    "259155_B_24": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "24",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0120"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    },
+    "259155_B_25": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "25",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0119"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    },
+    "259155_B_26": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "26",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0118"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    },
+    "259155_B_27": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259155",
+      "row": "B",
+      "seat_num": "27",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0117"
+      },
+      "c_code": "0000000003",
+      "a_id": "1",
+      "ticket_category": "0006",
+      "event_code": "ET00524518",
+      "event_title": "Godzilla Minus Zero",
+      "event_language": "Japanese",
+      "event_dimension": "2D",
+      "date_code": "20261120",
+      "time": "08:15 AM",
+      "screen": "SCREEN 6",
+      "attribute": "PCX Screen"
+    }
+  }
+}
