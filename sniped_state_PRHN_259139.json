@@ -3,8 +3,8 @@
   "session_ids": [
     "259139"
   ],
-  "completed_waves": 0,
-  "last_wave_finish_timestamp": 0,
+  "completed_waves": 1,
+  "last_wave_finish_timestamp": 1794974544.0590615,
   "available_seats": {
     "259139_K_18": {
       "venue_code": "PRHN",
