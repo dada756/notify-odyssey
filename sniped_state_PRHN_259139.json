@@ -1,0 +1,263 @@
+{
+  "venue_code": "PRHN",
+  "session_ids": [
+    "259139"
+  ],
+  "completed_waves": 0,
+  "last_wave_finish_timestamp": 0,
+  "available_seats": {
+    "259139_K_18": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "K",
+      "seat_num": "18",
+      "meta": {
+        "block_code": "A",
+        "row_index": "12",
+        "backend_seat": "0120"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_K_19": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "K",
+      "seat_num": "19",
+      "meta": {
+        "block_code": "A",
+        "row_index": "12",
+        "backend_seat": "0121"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_K_20": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "K",
+      "seat_num": "20",
+      "meta": {
+        "block_code": "A",
+        "row_index": "12",
+        "backend_seat": "0122"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_K_21": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "K",
+      "seat_num": "21",
+      "meta": {
+        "block_code": "A",
+        "row_index": "12",
+        "backend_seat": "0123"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_L_18": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "L",
+      "seat_num": "18",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0120"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_L_19": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "L",
+      "seat_num": "19",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0121"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_L_20": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "L",
+      "seat_num": "20",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0122"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_L_21": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "L",
+      "seat_num": "21",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0123"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_L_17": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "L",
+      "seat_num": "17",
+      "meta": {
+        "block_code": "A",
+        "row_index": "13",
+        "backend_seat": "0119"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_I_20": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "I",
+      "seat_num": "20",
+      "meta": {
+        "block_code": "A",
+        "row_index": "10",
+        "backend_seat": "0122"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    },
+    "259139_I_21": {
+      "venue_code": "PRHN",
+      "venue_name": "Prasads Multiplex: Hyderabad",
+      "session_id": "259139",
+      "row": "I",
+      "seat_num": "21",
+      "meta": {
+        "block_code": "A",
+        "row_index": "10",
+        "backend_seat": "0123"
+      },
+      "c_code": "0000000002",
+      "a_id": "1",
+      "ticket_category": "0005",
+      "event_code": "ET00526338",
+      "event_title": "O.M Operation Mole",
+      "event_language": "Tamil",
+      "event_dimension": "HDR By Barco",
+      "date_code": "20261120",
+      "time": "08:10 PM",
+      "screen": "SCREEN 4",
+      "attribute": "PCX HDR by BARCO"
+    }
+  }
+}
