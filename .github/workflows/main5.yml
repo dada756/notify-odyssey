@@ -43,7 +43,7 @@ jobs:
           TARGET_EVENT: 'zilla'
           TARGET_SCREEN: '1'
           TARGET_SESSIONS: ''
-          TARGET_TIME_START: '08:30 AM'
+          TARGET_TIME_START: '08:00 AM'
           TARGET_TIME_END: '01:50 PM'
           MAX_SHOWS: '6'
           MAX_WAVES: '5'
