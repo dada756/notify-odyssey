@@ -2,39 +2,45 @@
   "20261217": {
     "259079": {
       "time": "08:00 AM",
-      "eventName": "Avengers: Doomsday (3D) - English",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
       "screenName": "SCREEN 3",
-      "attributes": "BARCO 4K LASER"
+      "attributes": "Infinity Vision 3D"
     },
     "259080": {
       "time": "11:05 AM",
-      "eventName": "Avengers: Doomsday (3D) - English",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
       "screenName": "SCREEN 3",
-      "attributes": "BARCO 4K LASER"
+      "attributes": "Infinity Vision 3D"
     },
     "259081": {
       "time": "02:10 PM",
-      "eventName": "Avengers: Doomsday (3D) - English",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
       "screenName": "SCREEN 3",
-      "attributes": "BARCO 4K LASER"
+      "attributes": "Infinity Vision 3D"
     },
     "259082": {
       "time": "05:15 PM",
-      "eventName": "Avengers: Doomsday (3D) - English",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
       "screenName": "SCREEN 3",
-      "attributes": "BARCO 4K LASER"
+      "attributes": "Infinity Vision 3D"
     },
     "259083": {
       "time": "08:20 PM",
-      "eventName": "Avengers: Doomsday (3D) - English",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
       "screenName": "SCREEN 3",
-      "attributes": "BARCO 4K LASER"
+      "attributes": "Infinity Vision 3D"
     },
     "259084": {
       "time": "11:25 PM",
-      "eventName": "Avengers: Doomsday (3D) - English",
+      "eventName": "Avengers: Doomsday (MS-Infinity Vsn 3D) - English",
       "screenName": "SCREEN 3",
-      "attributes": "BARCO 4K LASER"
+      "attributes": "Infinity Vision 3D"
+    },
+    "259087": {
+      "time": "08:00 AM",
+      "eventName": "Avengers: Doomsday - English",
+      "screenName": "SCREEN 5",
+      "attributes": ""
     }
   },
   "20261218": {}
