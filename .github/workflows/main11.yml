@@ -34,14 +34,14 @@ jobs:
           WORKER_PASSPHRASE: '${{ secrets.WORKER_PASSPHRASE }}'
 
           # --- DYNAMIC / STATIC CONFIGURATION ---
-          VENUE_CODE: 'ALUC'
+          VENUE_CODE: 'PRHN'
           DATES: '20261218'
           DESIRED_SEATS: 'I:22,23,24,25,26,27,21; K:22,23,24,25,26,27,21;'
           TARGET_ATTRIBUTE: ''
           TARGET_DIMENSION: ''
           TARGET_LANGUAGE: ''
           TARGET_EVENT: 'venge'
-          TARGET_SCREEN: '1'
+          TARGET_SCREEN: '6'
           TARGET_SESSIONS: ''
           TARGET_TIME_START: '10:30 AM'
           TARGET_TIME_END: '03:50 PM'
